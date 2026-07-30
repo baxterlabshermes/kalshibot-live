@@ -1,0 +1,505 @@
+{
+  "generated_at": "2026-07-30T10:23:43.104992+00:00",
+  "phases_progress": "12 / 14",
+  "phases": {
+    "p0": {
+      "status": "done",
+      "since": "Jul 27",
+      "name": "Check the machines",
+      "what": "Audit the NUC and prove Hermes connectivity"
+    },
+    "p1": {
+      "status": "done",
+      "since": "Jul 27",
+      "name": "Skeleton & safety numbers",
+      "what": "Project structure, all risk limits in code"
+    },
+    "p2": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "Memory",
+      "what": "SQLite database with WAL mode and migrations"
+    },
+    "p3": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "Weather feed",
+      "what": "Live GFS ensemble forecasts"
+    },
+    "p4": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "Market feeds",
+      "what": "Kalshi contract discovery and snapshots"
+    },
+    "p5": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "Read the fine print",
+      "what": "Contract semantics verified",
+      "call": true
+    },
+    "p6": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "The brain",
+      "what": "Ensemble \u2192 probability \u2192 edge after fees"
+    },
+    "p7": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "Time-machine test",
+      "what": "Replay engine for honest backtesting"
+    },
+    "p8": {
+      "status": "done",
+      "since": "Jul 28",
+      "name": "Risk gate & kill switch",
+      "what": "12-gate pipeline, latching emergency stop",
+      "call": true
+    },
+    "p9": {
+      "status": "done",
+      "since": "Jul 29",
+      "name": "Paper trading",
+      "what": "Full pipeline with Kelly sizing and adversarial fills",
+      "call": true
+    },
+    "p10": {
+      "status": "done",
+      "since": "Jul 29",
+      "name": "Calibration & monitoring",
+      "what": "Brier 0.16, 7 alerts, edge half-life"
+    },
+    "p11": {
+      "status": "done",
+      "since": "Jul 29",
+      "name": "Scheduler & main loop",
+      "what": "FULL/ONCE/SCAN_ONLY modes, NUC deployed"
+    },
+    "p12": {
+      "status": "done",
+      "since": "Jul 29",
+      "name": "Hermes tools built",
+      "what": "12 MCP tools, 3 tiers, prompt-injection defenses"
+    },
+    "p13": {
+      "status": "pending",
+      "name": "Go live \u2014 $500",
+      "what": "Final checklist; only you can flip the switch to real money",
+      "call": true
+    }
+  },
+  "decisions": 73,
+  "tests": {
+    "total": 678,
+    "deselected": 6
+  },
+  "db": {
+    "contracts": 48,
+    "snapshots": 3226,
+    "observations": 0,
+    "resolved": 0,
+    "edge_signals": 3228
+  },
+  "health": {
+    "kill_switch": "GREEN",
+    "kill_switch_since": null,
+    "bot_mode": "FULL",
+    "last_cycle_seconds_ago": 310.0,
+    "weather_age_mins": 5.1,
+    "market_age_mins": 5.1,
+    "heartbeat_alive": true,
+    "db_size_mb": 3.0,
+    "edge_count": 20,
+    "fill_count": 3
+  },
+  "positions": {
+    "cash": 420.7656700247129,
+    "bankroll": 500.0,
+    "realized_pnl": 0,
+    "unrealized_pnl": 0.0,
+    "total_exposure": 79.2343,
+    "exposure_by_city": {
+      "Miami": 26.4976,
+      "Chicago": 52.7367
+    },
+    "open_count": 3,
+    "fill_count": 3,
+    "win_rate": 0.0
+  },
+  "calibration": {
+    "brier": null,
+    "win_rate": 0.0,
+    "resolved": 0,
+    "observations": 0,
+    "signal_market_correlation": 0.0,
+    "edge_half_life_minutes": 0.0,
+    "records": []
+  },
+  "performance": {
+    "brier_score": 0.0,
+    "win_rate": 0.0,
+    "pnl_total": 0,
+    "fee_total": 4.46,
+    "sharpe_like": 0.0,
+    "sortino": 0.0,
+    "calmar": 0.0,
+    "profit_factor": 0.0,
+    "max_drawdown": null
+  },
+  "competition": {
+    "avg_spread": 0.3417141971481711,
+    "avg_volume_24h": 0.0,
+    "signal_market_correlation": 0.11384382760553423,
+    "edge_half_life_minutes": 0.0,
+    "n_snapshots": 3226,
+    "n_signals": 3228,
+    "computed_at": "2026-07-30T10:23:43.107380+00:00"
+  },
+  "alerts": [],
+  "markets": [
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 67.0,
+      "condition": ">",
+      "model_pct": 3,
+      "market_pct": 50,
+      "edge_pct": 45,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 60.0,
+      "condition": "<",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 66.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 64.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 62.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 60.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 87.0,
+      "condition": ">",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 80.0,
+      "condition": "<",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 86.0,
+      "condition": ">",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 84.0,
+      "condition": ">",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 82.0,
+      "condition": ">",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 80.0,
+      "condition": ">",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 80.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 73.0,
+      "condition": "<",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 79.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 77.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 75.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "low",
+      "threshold": 73.0,
+      "condition": ">",
+      "model_pct": 100,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 97.0,
+      "condition": ">",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Miami",
+      "date": "2026-07-29",
+      "metric": "high",
+      "threshold": 90.0,
+      "condition": "<",
+      "model_pct": 0,
+      "market_pct": 50,
+      "edge_pct": 48,
+      "verdict": "Strong edge \u2014 market is wrong"
+    }
+  ],
+  "signals": [
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 67.0,
+      "model_prob": 0.032,
+      "market_prob": 0.5,
+      "edge": 0.448
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 60.0,
+      "model_prob": 0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 66.0,
+      "model_prob": 1.0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 64.0,
+      "model_prob": 1.0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 62.0,
+      "model_prob": 1.0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 60.0,
+      "model_prob": 1.0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 87.0,
+      "model_prob": 0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 80.0,
+      "model_prob": 1.0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 86.0,
+      "model_prob": 0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    },
+    {
+      "date": "2026-07-30",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 84.0,
+      "model_prob": 0,
+      "market_prob": 0.5,
+      "edge": 0.48
+    }
+  ],
+  "fills": [
+    {
+      "timestamp": "2026-07-30T00:09:43",
+      "contract_label": "Chicago LOW > 65.0\u00b0F 2026-07-30",
+      "size": 84,
+      "price": 0.2961,
+      "fee": 1.23,
+      "cost": 24.8698,
+      "is_paper": true
+    },
+    {
+      "timestamp": "2026-07-30T00:09:43",
+      "contract_label": "Chicago LOW > 67.0\u00b0F 2026-07-30",
+      "size": 263,
+      "price": 0.0952,
+      "fee": 1.59,
+      "cost": 25.0469,
+      "is_paper": true
+    },
+    {
+      "timestamp": "2026-07-30T00:06:48",
+      "contract_label": "Miami LOW < 74.0\u00b0F 2026-07-30",
+      "size": 416,
+      "price": 0.0598,
+      "fee": 1.64,
+      "cost": 24.8576,
+      "is_paper": true
+    }
+  ],
+  "settlements": []
+}
