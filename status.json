@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T00:37:26.540372+00:00",
+  "generated_at": "2026-07-31T00:52:36.882460+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -97,20 +97,20 @@
   },
   "db": {
     "contracts": 72,
-    "snapshots": 13057,
-    "observations": 0,
-    "resolved": 0,
-    "edge_signals": 10392
+    "snapshots": 13201,
+    "observations": 2,
+    "resolved": 20,
+    "edge_signals": 10488
   },
   "health": {
     "kill_switch": "GREEN",
     "kill_switch_since": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 284.0,
-    "weather_age_mins": 4.7,
-    "market_age_mins": 4.6,
+    "last_cycle_seconds_ago": 287.0,
+    "weather_age_mins": 4.8,
+    "market_age_mins": 4.7,
     "heartbeat_alive": true,
-    "db_size_mb": 8.4,
+    "db_size_mb": 8.5,
     "edge_count": 20,
     "fill_count": 4
   },
@@ -118,7 +118,7 @@
     "cash": 402.17927520384103,
     "bankroll": 500.0,
     "realized_pnl": 0,
-    "unrealized_pnl": -76.5157,
+    "unrealized_pnl": -76.7807,
     "total_exposure": 97.8207,
     "exposure_by_city": {
       "Miami": 45.084,
@@ -261,8 +261,8 @@
       "side": "YES",
       "size": 53,
       "entry_price": 0.335,
-      "current_mark": 0.33,
-      "unrealized_pnl": -1.0964,
+      "current_mark": 0.325,
+      "unrealized_pnl": -1.3614,
       "total_cost": 18.5864,
       "status": "open",
       "opened_at": "2026-07-30T23:47:16",
@@ -293,49 +293,98 @@
   "timeline": {
     "recent": [
       {
-        "time": "2026-07-31T00:32:49",
+        "time": "2026-07-31T00:47:57",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami LOW > 80.0\u00b0F 2026-07-29 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-07-31T00:47:57",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami LOW < 73.0\u00b0F 2026-07-29 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-07-31T00:47:57",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami LOW > 79.0\u00b0F 2026-07-29 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-07-31T00:47:57",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami LOW > 77.0\u00b0F 2026-07-29 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
+        "time": "2026-07-31T00:47:57",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami LOW > 75.0\u00b0F 2026-07-29 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
+        "time": "2026-07-31T00:47:55",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 68.0\u00b0F",
         "detail": "BUY_NO edge -0.5%"
       },
       {
-        "time": "2026-07-31T00:32:49",
+        "time": "2026-07-31T00:47:55",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 61.0\u00b0F",
         "detail": "BUY_NO edge -0.5%"
       },
       {
-        "time": "2026-07-31T00:32:49",
+        "time": "2026-07-31T00:47:55",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 67.0\u00b0F",
         "detail": "BUY_YES edge +40.4%"
       },
       {
-        "time": "2026-07-31T00:32:49",
+        "time": "2026-07-31T00:47:55",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 65.0\u00b0F",
         "detail": "BUY_YES edge +98.5%"
       },
       {
-        "time": "2026-07-31T00:32:49",
+        "time": "2026-07-31T00:47:55",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 63.0\u00b0F",
         "detail": "BUY_YES edge -0.5%"
       },
       {
-        "time": "2026-07-31T00:32:44",
+        "time": "2026-07-31T00:47:50",
         "type": "weather",
         "icon": "\u2601\ufe0f",
         "label": "Weather fetched for Miami",
         "detail": "GFS ensemble data"
       },
       {
-        "time": "2026-07-31T00:32:43",
+        "time": "2026-07-31T00:47:49",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-07-31T00:47:49",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-07-31T00:36:27",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
@@ -343,10 +392,10 @@
       },
       {
         "time": "2026-07-31T00:32:43",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
       },
       {
         "time": "2026-07-31T00:21:05",
@@ -357,20 +406,6 @@
       },
       {
         "time": "2026-07-31T00:17:23",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-07-31T00:05:58",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-07-31T00:02:16",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
@@ -603,13 +638,13 @@
         "urgent": true
       },
       {
-        "time": "2026-07-31T00:37:43.013070+00:00",
+        "time": "2026-07-31T00:52:49.393996+00:00",
         "icon": "\ud83d\udd04",
         "label": "Next scan cycle",
         "detail": "~0 min"
       },
       {
-        "time": "2026-07-31T06:32:44.094647+00:00",
+        "time": "2026-07-31T06:47:50.505028+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
         "detail": "~6h"
@@ -617,17 +652,58 @@
     ]
   },
   "calibration": {
-    "brier": null,
+    "brier": 0.1682,
     "win_rate": 0.0,
-    "resolved": 0,
-    "observations": 0,
+    "resolved": 20,
+    "observations": 2,
     "signal_market_correlation": 0.0,
     "edge_half_life_minutes": 0.0,
-    "records": []
+    "records": [
+      {
+        "city": "Chicago",
+        "lead": 0,
+        "bin": "0.0\u20130.1",
+        "actual": 0.0,
+        "brier": 0.00014865467518953692,
+        "n": 31465
+      },
+      {
+        "city": "Chicago",
+        "lead": 0,
+        "bin": "0.9\u20131.0",
+        "actual": 0.6,
+        "brier": 0.4,
+        "n": 22475
+      },
+      {
+        "city": "Miami",
+        "lead": 0,
+        "bin": "0.0\u20130.1",
+        "actual": 0.0,
+        "brier": 0.0,
+        "n": 12431
+      },
+      {
+        "city": "Miami",
+        "lead": 0,
+        "bin": "0.1\u20130.2",
+        "actual": 0.0,
+        "brier": 0.037460978147763044,
+        "n": 2480
+      },
+      {
+        "city": "Miami",
+        "lead": 0,
+        "bin": "0.9\u20131.0",
+        "actual": 0.6659793814432989,
+        "brier": 0.334020618556701,
+        "n": 15035
+      }
+    ]
   },
   "performance": {
-    "brier_score": 0.0,
-    "win_rate": 0.0,
+    "brier_score": 0.1682,
+    "win_rate": 0.2801182557280118,
     "pnl_total": 0,
     "fee_total": 5.29,
     "sharpe_like": 0.0,
@@ -637,13 +713,13 @@
     "max_drawdown": null
   },
   "competition": {
-    "avg_spread": 0.38268361798269124,
+    "avg_spread": 0.38225740474206504,
     "avg_volume_24h": 0.0,
-    "signal_market_correlation": 0.08825102037635045,
+    "signal_market_correlation": 0.08868087160445529,
     "edge_half_life_minutes": 0.0,
-    "n_snapshots": 13057,
-    "n_signals": 10392,
-    "computed_at": "2026-07-31T00:37:26.549465+00:00"
+    "n_snapshots": 13201,
+    "n_signals": 10488,
+    "computed_at": "2026-07-31T00:52:37.170288+00:00"
   },
   "alerts": [],
   "markets": [
@@ -820,7 +896,7 @@
       "condition": ">",
       "model_pct": 100,
       "market_pct": 4,
-      "edge_pct": 94,
+      "edge_pct": 95,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -998,7 +1074,128 @@
       "is_paper": true
     }
   ],
-  "settlements": [],
+  "settlements": [
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami LOW > 80.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami LOW < 73.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami LOW > 79.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami LOW > 77.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami LOW > 75.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami LOW > 73.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago LOW > 67.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago LOW < 60.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago LOW > 66.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago LOW > 64.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago LOW > 62.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago LOW > 60.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami HIGH > 97.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami HIGH < 90.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami HIGH > 96.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami HIGH > 94.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami HIGH > 92.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Miami HIGH > 90.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago HIGH > 87.0\u00b0F 2026-07-29",
+      "outcome": "NO",
+      "realized_pnl": 0
+    },
+    {
+      "settled_at": "2026-07-31T00:47:57",
+      "contract_label": "Chicago HIGH < 80.0\u00b0F 2026-07-29",
+      "outcome": "YES",
+      "realized_pnl": 0
+    }
+  ],
   "pnl_history": [
     0.0
   ],
@@ -1033,49 +1230,238 @@
   },
   "events": [
     {
-      "time": "2026-07-31T00:32:49",
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 80.0\u00b0F 2026-07-29 resolved",
+      "detail": "Outcome: NO",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW < 73.0\u00b0F 2026-07-29 resolved",
+      "detail": "Outcome: NO",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 79.0\u00b0F 2026-07-29 resolved",
+      "detail": "Outcome: NO",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 77.0\u00b0F 2026-07-29 resolved",
+      "detail": "Outcome: YES",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 75.0\u00b0F 2026-07-29 resolved",
+      "detail": "Outcome: YES",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 80.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW < 73.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 79.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 77.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 75.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami LOW > 73.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago LOW > 67.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago LOW < 60.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago LOW > 66.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago LOW > 64.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago LOW > 62.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago LOW > 60.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami HIGH > 97.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami HIGH < 90.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami HIGH > 96.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami HIGH > 94.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami HIGH > 92.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Miami HIGH > 90.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago HIGH > 87.0\u00b0F 2026-07-29 resolved: NO",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:57",
+      "type": "settlement",
+      "label": "Chicago HIGH < 80.0\u00b0F 2026-07-29 resolved: YES",
+      "detail": "PnL $+0.00",
+      "severity": "warning"
+    },
+    {
+      "time": "2026-07-31T00:47:55",
       "type": "edge",
       "label": "Chicago LOW 68.0\u00b0F",
       "detail": "BUY_NO edge -0.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T00:32:49",
+      "time": "2026-07-31T00:47:55",
       "type": "edge",
       "label": "Chicago LOW 61.0\u00b0F",
       "detail": "BUY_NO edge -0.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T00:32:49",
+      "time": "2026-07-31T00:47:55",
       "type": "edge",
       "label": "Chicago LOW 67.0\u00b0F",
       "detail": "BUY_YES edge +40.4%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T00:32:49",
+      "time": "2026-07-31T00:47:55",
       "type": "edge",
       "label": "Chicago LOW 65.0\u00b0F",
       "detail": "BUY_YES edge +98.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T00:32:49",
+      "time": "2026-07-31T00:47:55",
       "type": "edge",
       "label": "Chicago LOW 63.0\u00b0F",
       "detail": "BUY_YES edge -0.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T00:32:44",
+      "time": "2026-07-31T00:47:50",
       "type": "weather",
       "label": "Weather fetched for Miami",
       "detail": "GFS ensemble data",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T00:32:43",
+      "time": "2026-07-31T00:47:49",
+      "type": "cycle",
+      "label": "Main cycle completed",
+      "detail": "Status: alive",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:47:49",
+      "type": "weather",
+      "label": "Weather fetched for Chicago",
+      "detail": "GFS ensemble data",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T00:36:27",
       "type": "cycle",
       "label": "Main cycle completed",
       "detail": "Status: alive",
@@ -1083,9 +1469,9 @@
     },
     {
       "time": "2026-07-31T00:32:43",
-      "type": "weather",
-      "label": "Weather fetched for Chicago",
-      "detail": "GFS ensemble data",
+      "type": "cycle",
+      "label": "Main cycle completed",
+      "detail": "Status: alive",
       "severity": "info"
     },
     {
@@ -1097,20 +1483,6 @@
     },
     {
       "time": "2026-07-31T00:17:23",
-      "type": "cycle",
-      "label": "Main cycle completed",
-      "detail": "Status: alive",
-      "severity": "info"
-    },
-    {
-      "time": "2026-07-31T00:05:58",
-      "type": "cycle",
-      "label": "Main cycle completed",
-      "detail": "Status: alive",
-      "severity": "info"
-    },
-    {
-      "time": "2026-07-31T00:02:16",
       "type": "cycle",
       "label": "Main cycle completed",
       "detail": "Status: alive",
