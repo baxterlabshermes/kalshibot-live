@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T18:12:24.494445+00:00",
+  "generated_at": "2026-07-31T18:17:33.307718+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -97,22 +97,79 @@
   },
   "db": {
     "contracts": 96,
-    "snapshots": 31311,
+    "snapshots": 31461,
     "observations": 2,
     "resolved": 20,
-    "edge_signals": 26592
+    "edge_signals": 26688
   },
   "health": {
     "kill_switch": "GREEN",
     "kill_switch_since": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 217.0,
+    "last_cycle_seconds_ago": 220.0,
     "weather_age_mins": 3.6,
-    "market_age_mins": 3.5,
+    "market_age_mins": 3.6,
     "heartbeat_alive": true,
-    "db_size_mb": 18.9,
+    "db_size_mb": 19.0,
     "edge_count": 20,
-    "fill_count": 4
+    "fill_count": 4,
+    "cycle_signals": 48,
+    "cycle_intents": 0,
+    "cycle_fills": 0,
+    "next_settlement_hours": 0,
+    "edge_history": [
+      39.53,
+      39.39,
+      39.94,
+      39.95,
+      40.21,
+      40.04,
+      40.12,
+      40.11,
+      40.15,
+      40.53,
+      40.53,
+      40.54,
+      40.52,
+      40.59,
+      40.42,
+      40.45,
+      41.79,
+      41.72,
+      41.7,
+      41.88,
+      41.74,
+      41.94,
+      41.96,
+      42.01,
+      41.66,
+      41.76,
+      41.56,
+      41.79,
+      41.84,
+      41.87,
+      41.9,
+      42.01,
+      41.87,
+      42.16,
+      42.28,
+      42.22,
+      42.16,
+      42.15,
+      42.21,
+      42.27,
+      42.14,
+      42.19,
+      42.19,
+      42.05,
+      42.04,
+      42.21,
+      42.33,
+      42.07
+    ],
+    "brier_history": [
+      0.1682
+    ]
   },
   "positions": {
     "cash": 402.17927520384103,
@@ -293,42 +350,63 @@
   "timeline": {
     "recent": [
       {
-        "time": "2026-07-31T18:08:53",
+        "time": "2026-07-31T18:14:00",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 70.0\u00b0F",
-        "detail": "BUY_YES edge +41.9%"
+        "detail": "BUY_YES edge +42.4%"
       },
       {
-        "time": "2026-07-31T18:08:53",
+        "time": "2026-07-31T18:14:00",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 63.0\u00b0F",
         "detail": "BUY_NO edge +1.5%"
       },
       {
-        "time": "2026-07-31T18:08:53",
+        "time": "2026-07-31T18:14:00",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 69.0\u00b0F",
-        "detail": "BUY_YES edge +43.2%"
+        "detail": "BUY_YES edge +30.2%"
       },
       {
-        "time": "2026-07-31T18:08:53",
+        "time": "2026-07-31T18:14:00",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 67.0\u00b0F",
-        "detail": "BUY_YES edge +28.5%"
+        "detail": "BUY_YES edge +29.5%"
       },
       {
-        "time": "2026-07-31T18:08:53",
+        "time": "2026-07-31T18:14:00",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 65.0\u00b0F",
-        "detail": "BUY_YES edge +70.5%"
+        "detail": "BUY_YES edge +72.5%"
       },
       {
-        "time": "2026-07-31T18:08:47",
+        "time": "2026-07-31T18:13:54",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Miami",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-07-31T18:13:53",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-07-31T18:13:53",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-07-31T18:12:17",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
@@ -336,17 +414,10 @@
       },
       {
         "time": "2026-07-31T18:08:47",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Miami",
-        "detail": "GFS ensemble data"
-      },
-      {
-        "time": "2026-07-31T18:08:47",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
       },
       {
         "time": "2026-07-31T18:07:10",
@@ -357,20 +428,6 @@
       },
       {
         "time": "2026-07-31T18:03:40",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-07-31T18:02:02",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-07-31T17:58:33",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
@@ -806,13 +863,13 @@
         "urgent": false
       },
       {
-        "time": "2026-07-31T18:13:47.281202+00:00",
+        "time": "2026-07-31T18:18:53.781908+00:00",
         "icon": "\ud83d\udd04",
         "label": "Next scan cycle",
         "detail": "~1 min"
       },
       {
-        "time": "2026-08-01T00:08:47.864552+00:00",
+        "time": "2026-08-01T00:13:54.324025+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
         "detail": "~6h"
@@ -881,13 +938,13 @@
     "max_drawdown": null
   },
   "competition": {
-    "avg_spread": 0.4125642745361055,
+    "avg_spread": 0.4124328533740186,
     "avg_volume_24h": 0.0,
-    "signal_market_correlation": 0.02728187914191714,
+    "signal_market_correlation": 0.027250833752299246,
     "edge_half_life_minutes": 0.0,
-    "n_snapshots": 31311,
-    "n_signals": 26592,
-    "computed_at": "2026-07-31T18:12:24.796624+00:00"
+    "n_snapshots": 31461,
+    "n_signals": 26688,
+    "computed_at": "2026-07-31T18:17:33.622056+00:00"
   },
   "alerts": [],
   "markets": [
@@ -898,7 +955,7 @@
       "threshold": 70.0,
       "condition": ">",
       "model_pct": 48,
-      "market_pct": 6,
+      "market_pct": 5,
       "edge_pct": 42,
       "verdict": "Strong edge \u2014 market is wrong"
     },
@@ -920,8 +977,8 @@
       "threshold": 69.0,
       "condition": ">",
       "model_pct": 75,
-      "market_pct": 30,
-      "edge_pct": 43,
+      "market_pct": 43,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -931,8 +988,8 @@
       "threshold": 67.0,
       "condition": ">",
       "model_pct": 80,
-      "market_pct": 50,
-      "edge_pct": 29,
+      "market_pct": 48,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -942,8 +999,8 @@
       "threshold": 65.0,
       "condition": ">",
       "model_pct": 80,
-      "market_pct": 8,
-      "edge_pct": 70,
+      "market_pct": 6,
+      "edge_pct": 73,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -1030,8 +1087,8 @@
       "threshold": 96.0,
       "condition": ">",
       "model_pct": 0,
-      "market_pct": 26,
-      "edge_pct": 24,
+      "market_pct": 32,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -1052,8 +1109,8 @@
       "threshold": 95.0,
       "condition": ">",
       "model_pct": 0,
-      "market_pct": 74,
-      "edge_pct": 72,
+      "market_pct": 70,
+      "edge_pct": 68,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -1096,8 +1153,8 @@
       "threshold": 80.0,
       "condition": ">",
       "model_pct": 83,
-      "market_pct": 61,
-      "edge_pct": 20,
+      "market_pct": 60,
+      "edge_pct": 22,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
@@ -1119,8 +1176,8 @@
       "metric": "low",
       "threshold": 70.0,
       "model_prob": 0.484,
-      "market_prob": 0.055,
-      "edge": 0.419
+      "market_prob": 0.05,
+      "edge": 0.424
     },
     {
       "date": "2026-07-31",
@@ -1137,8 +1194,8 @@
       "metric": "low",
       "threshold": 69.0,
       "model_prob": 0.752,
-      "market_prob": 0.3,
-      "edge": 0.432
+      "market_prob": 0.43,
+      "edge": 0.302
     },
     {
       "date": "2026-07-31",
@@ -1146,8 +1203,8 @@
       "metric": "low",
       "threshold": 67.0,
       "model_prob": 0.8,
-      "market_prob": 0.495,
-      "edge": 0.285
+      "market_prob": 0.485,
+      "edge": 0.295
     },
     {
       "date": "2026-07-31",
@@ -1155,8 +1212,8 @@
       "metric": "low",
       "threshold": 65.0,
       "model_prob": 0.8,
-      "market_prob": 0.085,
-      "edge": 0.705
+      "market_prob": 0.065,
+      "edge": 0.725
     },
     {
       "date": "2026-07-31",
@@ -1398,42 +1455,63 @@
   },
   "events": [
     {
-      "time": "2026-07-31T18:08:53",
+      "time": "2026-07-31T18:14:00",
       "type": "edge",
       "label": "Chicago LOW 70.0\u00b0F",
-      "detail": "BUY_YES edge +41.9%",
+      "detail": "BUY_YES edge +42.4%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T18:08:53",
+      "time": "2026-07-31T18:14:00",
       "type": "edge",
       "label": "Chicago LOW 63.0\u00b0F",
       "detail": "BUY_NO edge +1.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T18:08:53",
+      "time": "2026-07-31T18:14:00",
       "type": "edge",
       "label": "Chicago LOW 69.0\u00b0F",
-      "detail": "BUY_YES edge +43.2%",
+      "detail": "BUY_YES edge +30.2%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T18:08:53",
+      "time": "2026-07-31T18:14:00",
       "type": "edge",
       "label": "Chicago LOW 67.0\u00b0F",
-      "detail": "BUY_YES edge +28.5%",
+      "detail": "BUY_YES edge +29.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T18:08:53",
+      "time": "2026-07-31T18:14:00",
       "type": "edge",
       "label": "Chicago LOW 65.0\u00b0F",
-      "detail": "BUY_YES edge +70.5%",
+      "detail": "BUY_YES edge +72.5%",
       "severity": "info"
     },
     {
-      "time": "2026-07-31T18:08:47",
+      "time": "2026-07-31T18:13:54",
+      "type": "weather",
+      "label": "Weather fetched for Miami",
+      "detail": "GFS ensemble data",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T18:13:53",
+      "type": "cycle",
+      "label": "Main cycle completed",
+      "detail": "Status: alive",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T18:13:53",
+      "type": "weather",
+      "label": "Weather fetched for Chicago",
+      "detail": "GFS ensemble data",
+      "severity": "info"
+    },
+    {
+      "time": "2026-07-31T18:12:17",
       "type": "cycle",
       "label": "Main cycle completed",
       "detail": "Status: alive",
@@ -1441,16 +1519,9 @@
     },
     {
       "time": "2026-07-31T18:08:47",
-      "type": "weather",
-      "label": "Weather fetched for Miami",
-      "detail": "GFS ensemble data",
-      "severity": "info"
-    },
-    {
-      "time": "2026-07-31T18:08:47",
-      "type": "weather",
-      "label": "Weather fetched for Chicago",
-      "detail": "GFS ensemble data",
+      "type": "cycle",
+      "label": "Main cycle completed",
+      "detail": "Status: alive",
       "severity": "info"
     },
     {
@@ -1462,20 +1533,6 @@
     },
     {
       "time": "2026-07-31T18:03:40",
-      "type": "cycle",
-      "label": "Main cycle completed",
-      "detail": "Status: alive",
-      "severity": "info"
-    },
-    {
-      "time": "2026-07-31T18:02:02",
-      "type": "cycle",
-      "label": "Main cycle completed",
-      "detail": "Status: alive",
-      "severity": "info"
-    },
-    {
-      "time": "2026-07-31T17:58:33",
       "type": "cycle",
       "label": "Main cycle completed",
       "detail": "Status: alive",
