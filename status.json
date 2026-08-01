@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T11:18:01.298974+00:00",
+  "generated_at": "2026-08-01T11:23:13.725998+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -97,18 +97,18 @@
   },
   "db": {
     "contracts": 96,
-    "snapshots": 39535,
+    "snapshots": 39591,
     "observations": 4,
     "resolved": 40,
-    "edge_signals": 33072
+    "edge_signals": 33120
   },
   "health": {
     "kill_switch": "GREEN",
     "kill_switch_since": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 314.0,
-    "weather_age_mins": 5.2,
-    "market_age_mins": 5.1,
+    "last_cycle_seconds_ago": 317.0,
+    "weather_age_mins": 5.3,
+    "market_age_mins": 5.2,
     "heartbeat_alive": true,
     "db_size_mb": 23.6,
     "edge_count": 20,
@@ -118,7 +118,6 @@
     "cycle_fills": 0,
     "next_settlement_hours": 0,
     "edge_history": [
-      36.16,
       36.13,
       36.02,
       36.06,
@@ -165,7 +164,8 @@
       36.48,
       36.69,
       36.94,
-      36.62
+      36.62,
+      36.78
     ],
     "brier_history": [
       0.2792
@@ -430,45 +430,59 @@
   "timeline": {
     "recent": [
       {
-        "time": "2026-08-01T11:12:52",
+        "time": "2026-08-01T11:18:01",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 70.0\u00b0F",
         "detail": "BUY_NO edge +6.1%"
       },
       {
-        "time": "2026-08-01T11:12:52",
+        "time": "2026-08-01T11:18:01",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 63.0\u00b0F",
         "detail": "BUY_NO edge +48.0%"
       },
       {
-        "time": "2026-08-01T11:12:52",
+        "time": "2026-08-01T11:18:01",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 69.0\u00b0F",
         "detail": "BUY_YES edge +31.9%"
       },
       {
-        "time": "2026-08-01T11:12:52",
+        "time": "2026-08-01T11:18:01",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 67.0\u00b0F",
         "detail": "BUY_YES edge +26.4%"
       },
       {
-        "time": "2026-08-01T11:12:52",
+        "time": "2026-08-01T11:18:01",
         "type": "edge",
         "icon": "\u0394\ufe0f",
         "label": "Chicago LOW 65.0\u00b0F",
         "detail": "BUY_YES edge +28.0%"
       },
       {
-        "time": "2026-08-01T11:12:48",
+        "time": "2026-08-01T11:17:56",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-01T11:17:56",
         "type": "weather",
         "icon": "\u2601\ufe0f",
         "label": "Weather fetched for Miami",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-01T11:17:56",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
         "detail": "GFS ensemble data"
       },
       {
@@ -477,13 +491,6 @@
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
         "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-01T11:12:47",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
       },
       {
         "time": "2026-08-01T11:07:39",
@@ -501,13 +508,6 @@
       },
       {
         "time": "2026-08-01T10:57:21",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-01T10:52:13",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
@@ -782,7 +782,7 @@
         "urgent": true
       },
       {
-        "time": "2026-08-01T17:12:48.623520+00:00",
+        "time": "2026-08-01T17:17:56.845571+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
         "detail": "~6h"
@@ -1011,13 +1011,13 @@
     "max_drawdown": null
   },
   "competition": {
-    "avg_spread": 0.40825572277728595,
+    "avg_spread": 0.40850269000530426,
     "avg_volume_24h": 0.0,
-    "signal_market_correlation": 0.024916612850421602,
+    "signal_market_correlation": 0.024903099724641033,
     "edge_half_life_minutes": 0.0,
-    "n_snapshots": 39535,
-    "n_signals": 33072,
-    "computed_at": "2026-08-01T11:18:02.901000+00:00"
+    "n_snapshots": 39591,
+    "n_signals": 33120,
+    "computed_at": "2026-08-01T11:23:15.338942+00:00"
   },
   "alerts": [],
   "markets": [
@@ -1576,44 +1576,58 @@
   },
   "events": [
     {
-      "time": "2026-08-01T11:12:52",
+      "time": "2026-08-01T11:18:01",
       "type": "edge",
       "label": "Chicago LOW 70.0\u00b0F",
       "detail": "BUY_NO edge +6.1%",
       "severity": "info"
     },
     {
-      "time": "2026-08-01T11:12:52",
+      "time": "2026-08-01T11:18:01",
       "type": "edge",
       "label": "Chicago LOW 63.0\u00b0F",
       "detail": "BUY_NO edge +48.0%",
       "severity": "info"
     },
     {
-      "time": "2026-08-01T11:12:52",
+      "time": "2026-08-01T11:18:01",
       "type": "edge",
       "label": "Chicago LOW 69.0\u00b0F",
       "detail": "BUY_YES edge +31.9%",
       "severity": "info"
     },
     {
-      "time": "2026-08-01T11:12:52",
+      "time": "2026-08-01T11:18:01",
       "type": "edge",
       "label": "Chicago LOW 67.0\u00b0F",
       "detail": "BUY_YES edge +26.4%",
       "severity": "info"
     },
     {
-      "time": "2026-08-01T11:12:52",
+      "time": "2026-08-01T11:18:01",
       "type": "edge",
       "label": "Chicago LOW 65.0\u00b0F",
       "detail": "BUY_YES edge +28.0%",
       "severity": "info"
     },
     {
-      "time": "2026-08-01T11:12:48",
+      "time": "2026-08-01T11:17:56",
+      "type": "cycle",
+      "label": "Main cycle completed",
+      "detail": "Status: alive",
+      "severity": "info"
+    },
+    {
+      "time": "2026-08-01T11:17:56",
       "type": "weather",
       "label": "Weather fetched for Miami",
+      "detail": "GFS ensemble data",
+      "severity": "info"
+    },
+    {
+      "time": "2026-08-01T11:17:56",
+      "type": "weather",
+      "label": "Weather fetched for Chicago",
       "detail": "GFS ensemble data",
       "severity": "info"
     },
@@ -1622,13 +1636,6 @@
       "type": "cycle",
       "label": "Main cycle completed",
       "detail": "Status: alive",
-      "severity": "info"
-    },
-    {
-      "time": "2026-08-01T11:12:47",
-      "type": "weather",
-      "label": "Weather fetched for Chicago",
-      "detail": "GFS ensemble data",
       "severity": "info"
     },
     {
@@ -1647,13 +1654,6 @@
     },
     {
       "time": "2026-08-01T10:57:21",
-      "type": "cycle",
-      "label": "Main cycle completed",
-      "detail": "Status: alive",
-      "severity": "info"
-    },
-    {
-      "time": "2026-08-01T10:52:13",
       "type": "cycle",
       "label": "Main cycle completed",
       "detail": "Status: alive",
