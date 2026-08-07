@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T05:46:22.926088+00:00",
+  "generated_at": "2026-08-07T05:46:59.640515+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -106,9 +106,9 @@
     "kill_switch": "RED",
     "kill_switch_since": "2026-08-07T05:42:08",
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 264.0,
-    "weather_age_mins": 4.4,
-    "market_age_mins": 4.2,
+    "last_cycle_seconds_ago": 301.0,
+    "weather_age_mins": 5.0,
+    "market_age_mins": 4.9,
     "heartbeat_alive": true,
     "db_size_mb": 64.6,
     "edge_count": 20,
@@ -659,12 +659,6 @@
         "urgent": true
       },
       {
-        "time": "2026-08-07T05:46:58.998213+00:00",
-        "icon": "\ud83d\udd04",
-        "label": "Next scan cycle",
-        "detail": "~1 min"
-      },
-      {
         "time": "2026-08-07T11:42:00.123167+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
@@ -1021,7 +1015,7 @@
     "edge_half_life_minutes": 0.0,
     "n_snapshots": 106479,
     "n_signals": 63066,
-    "computed_at": "2026-08-07T05:46:31.593669+00:00"
+    "computed_at": "2026-08-07T05:47:08.293627+00:00"
   },
   "alerts": [],
   "monitoring": {
