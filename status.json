@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T05:45:46.252480+00:00",
+  "generated_at": "2026-08-07T05:46:22.926088+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -106,9 +106,9 @@
     "kill_switch": "RED",
     "kill_switch_since": "2026-08-07T05:42:08",
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 227.0,
-    "weather_age_mins": 3.8,
-    "market_age_mins": 3.6,
+    "last_cycle_seconds_ago": 264.0,
+    "weather_age_mins": 4.4,
+    "market_age_mins": 4.2,
     "heartbeat_alive": true,
     "db_size_mb": 64.6,
     "edge_count": 20,
@@ -1021,7 +1021,7 @@
     "edge_half_life_minutes": 0.0,
     "n_snapshots": 106479,
     "n_signals": 63066,
-    "computed_at": "2026-08-07T05:45:54.891000+00:00"
+    "computed_at": "2026-08-07T05:46:31.593669+00:00"
   },
   "alerts": [],
   "monitoring": {
