@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:16:04.743002+00:00",
+  "generated_at": "2026-08-09T05:59:19.717779+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -97,10 +97,10 @@
   },
   "db": {
     "contracts": 365,
-    "snapshots": 127012,
-    "observations": 20,
-    "resolved": 240,
-    "edge_signals": 75454
+    "snapshots": 127080,
+    "observations": 22,
+    "resolved": 258,
+    "edge_signals": 75456
   },
   "health": {
     "kill_switch": "GREEN",
@@ -108,11 +108,11 @@
     "kill_switch_trigger": null,
     "kill_switch_reason": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 11.0,
-    "weather_age_mins": 0.2,
-    "market_age_mins": 0.0,
+    "last_cycle_seconds_ago": 761.0,
+    "weather_age_mins": 12.7,
+    "market_age_mins": 12.5,
     "heartbeat_alive": true,
-    "db_size_mb": 66.0,
+    "db_size_mb": 66.2,
     "edge_count": 20,
     "fill_count": 15,
     "cycle_signals": 1,
@@ -120,8 +120,6 @@
     "cycle_fills": 0,
     "next_settlement_hours": 0,
     "edge_history": [
-      35.71,
-      35.71,
       35.71,
       29.71,
       30.96,
@@ -167,11 +165,14 @@
       20.19,
       20.19,
       20.19,
-      20.19
+      20.19,
+      6.71,
+      -0.7
     ],
     "brier_history": [
       0.2309,
       0.2131,
+      0.2128,
       0.2128
     ]
   },
@@ -354,6 +355,97 @@
   "timeline": {
     "recent": [
       {
+        "time": "2026-08-09T05:46:48",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge -0.7%"
+      },
+      {
+        "time": "2026-08-09T05:46:39",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Miami",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T05:46:38",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T05:46:38",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T05:31:29",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge +6.7%"
+      },
+      {
+        "time": "2026-08-09T05:31:21",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Miami",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T05:31:20",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T05:31:20",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T05:16:15",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Chicago HIGH > 88.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-08-09T05:16:15",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Chicago HIGH < 81.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-08-09T05:16:15",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Chicago HIGH > 87.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-08-09T05:16:15",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Chicago HIGH > 85.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
+        "time": "2026-08-09T05:16:15",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Chicago HIGH > 81.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
         "time": "2026-08-09T05:16:04",
         "type": "edge",
         "icon": "\u0394\ufe0f",
@@ -361,25 +453,11 @@
         "detail": "BUY_YES edge +20.2%"
       },
       {
-        "time": "2026-08-09T05:15:55",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Miami",
-        "detail": "GFS ensemble data"
-      },
-      {
         "time": "2026-08-09T05:15:54",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
         "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-09T05:15:54",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
       },
       {
         "time": "2026-08-09T05:12:55",
@@ -424,39 +502,11 @@
         "detail": "@31.0\u00a2 each"
       },
       {
-        "time": "2026-08-09T04:42:05",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-09T04:26:55",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 85.0\u00b0F",
-        "detail": "BUY_YES edge +20.2%"
-      },
-      {
         "time": "2026-08-09T04:26:55",
         "type": "fill",
         "icon": "\u2705",
         "label": "Filled 5 \u00d7 Chicago HIGH > 85.0\u00b0F 2026-08-09",
         "detail": "@31.0\u00a2 each"
-      },
-      {
-        "time": "2026-08-09T04:26:45",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-09T04:11:35",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 83.0\u00b0F",
-        "detail": "BUY_NO edge +29.0%"
       },
       {
         "time": "2026-08-09T03:56:07",
@@ -478,55 +528,6 @@
         "icon": "\u2705",
         "label": "Filled 5 \u00d7 Chicago HIGH < 83.0\u00b0F 2026-08-09",
         "detail": "@40.0\u00a2 each"
-      },
-      {
-        "time": "2026-08-08T23:33:18",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Miami",
-        "detail": "GFS ensemble data"
-      },
-      {
-        "time": "2026-08-08T23:33:17",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
-      },
-      {
-        "time": "2026-08-08T21:24:06",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago HIGH > 84.0\u00b0F 2026-08-07 resolved",
-        "detail": "Outcome: NO"
-      },
-      {
-        "time": "2026-08-08T21:24:06",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago HIGH > 82.0\u00b0F 2026-08-07 resolved",
-        "detail": "Outcome: YES"
-      },
-      {
-        "time": "2026-08-08T21:24:06",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago LOW > 69.0\u00b0F 2026-08-07 resolved",
-        "detail": "Outcome: NO"
-      },
-      {
-        "time": "2026-08-08T21:24:06",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago LOW < 62.0\u00b0F 2026-08-07 resolved",
-        "detail": "Outcome: NO"
-      },
-      {
-        "time": "2026-08-08T21:24:06",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago LOW > 68.0\u00b0F 2026-08-07 resolved",
-        "detail": "Outcome: NO"
       },
       {
         "time": "2026-08-08T17:43:55",
@@ -1007,13 +1008,7 @@
         "urgent": false
       },
       {
-        "time": "2026-08-09T05:20:54.118752+00:00",
-        "icon": "\ud83d\udd04",
-        "label": "Next scan cycle",
-        "detail": "~5 min"
-      },
-      {
-        "time": "2026-08-09T11:15:55.265784+00:00",
+        "time": "2026-08-09T11:46:39.920244+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
         "detail": "~6h"
@@ -1023,8 +1018,8 @@
   "calibration": {
     "brier": 0.2128,
     "win_rate": 0.571,
-    "resolved": 240,
-    "observations": 20,
+    "resolved": 258,
+    "observations": 22,
     "signal_market_correlation": 0.0,
     "edge_half_life_minutes": 0.0,
     "records": [
@@ -1056,9 +1051,9 @@
         "city": "Chicago",
         "lead": 0,
         "bin": "0.3\u20130.4",
-        "actual": 0.09391711229946524,
-        "brier": 0.12938785294421795,
-        "n": 2992
+        "actual": 0.09295401918623883,
+        "brier": 0.12966986921642398,
+        "n": 3023
       },
       {
         "city": "Chicago",
@@ -1088,9 +1083,9 @@
         "city": "Chicago",
         "lead": 0,
         "bin": "0.7\u20130.8",
-        "actual": 0.3253102670176758,
-        "brier": 0.3841594613452832,
-        "n": 15954
+        "actual": 0.33563757560794966,
+        "brier": 0.3793168299227263,
+        "n": 16202
       },
       {
         "city": "Chicago",
@@ -1340,31 +1335,53 @@
     "pnl_total": -56.7462,
     "pnl_source": "kalshi",
     "fee_total": 4.7958,
-    "sharpe_like": 0.4934829488614766,
-    "sortino": 30.101295696110792,
-    "calmar": 18.28254716981148,
-    "profit_factor": 104.35733333333334,
+    "sharpe_like": 0.45746237967028874,
+    "sortino": 23.010430001156756,
+    "calmar": 13.975786163522134,
+    "profit_factor": 119.51466666666667,
     "max_drawdown": null
   },
   "competition": {
-    "avg_spread": 0.5301878927710997,
+    "avg_spread": 0.5304042156837727,
     "avg_volume_24h": 0.0,
-    "signal_market_correlation": -0.004221069629649297,
+    "signal_market_correlation": -0.004874132778480378,
     "edge_half_life_minutes": 0.0,
-    "n_snapshots": 78449,
-    "n_signals": 34342,
-    "computed_at": "2026-08-09T05:16:12.536031+00:00"
+    "n_snapshots": 78374,
+    "n_signals": 34200,
+    "computed_at": "2026-08-09T05:59:26.835978+00:00"
   },
   "alerts": [],
   "monitoring": {
-    "system_events": 521,
+    "system_events": 565,
     "recent_errors": [],
     "calibration_improvement_pct": 23.7,
-    "calibration_validated": 20046,
+    "calibration_validated": 20055,
     "liquid_contracts": 206,
     "total_liquidity_contracts": 206
   },
   "markets": [
+    {
+      "city": "Chicago",
+      "date": "2026-08-09",
+      "metric": "high",
+      "threshold": 85.0,
+      "condition": ">",
+      "model_pct": 31,
+      "market_pct": 30,
+      "edge_pct": -1,
+      "verdict": "Market is slightly ahead"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-08-09",
+      "metric": "high",
+      "threshold": 85.0,
+      "condition": ">",
+      "model_pct": 39,
+      "market_pct": 30,
+      "edge_pct": 7,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
     {
       "city": "Chicago",
       "date": "2026-08-09",
@@ -1562,31 +1579,27 @@
       "market_pct": 51,
       "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
-    },
-    {
-      "city": "Chicago",
-      "date": "2026-08-09",
-      "metric": "high",
-      "threshold": 83.0,
-      "condition": "<",
-      "model_pct": 9,
-      "market_pct": 41,
-      "edge_pct": 30,
-      "verdict": "Strong edge \u2014 market is wrong"
-    },
-    {
-      "city": "Chicago",
-      "date": "2026-08-08",
-      "metric": "high",
-      "threshold": 83.0,
-      "condition": ">",
-      "model_pct": 74,
-      "market_pct": 51,
-      "edge_pct": 21,
-      "verdict": "Strong edge \u2014 market is wrong"
     }
   ],
   "signals": [
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "model_prob": 0.313,
+      "market_prob": 0.3,
+      "edge": -0.007
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "model_prob": 0.387,
+      "market_prob": 0.3,
+      "edge": 0.067
+    },
     {
       "date": "2026-08-09",
       "city": "Chicago",
@@ -1631,24 +1644,6 @@
       "model_prob": 0.085,
       "market_prob": 0.395,
       "edge": 0.29
-    },
-    {
-      "date": "2026-08-09",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 83.0,
-      "model_prob": 0.74,
-      "market_prob": 0.51,
-      "edge": 0.21
-    },
-    {
-      "date": "2026-08-09",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 83.0,
-      "model_prob": 0.085,
-      "market_prob": 0.41,
-      "edge": 0.305
     },
     {
       "date": "2026-08-09",
@@ -1996,10 +1991,10 @@
       "opened_at": null,
       "closed_at": null,
       "resolved_outcome": null,
-      "actual_high_f": null,
-      "actual_low_f": null,
-      "actual_f": null,
-      "actual_source": null,
+      "actual_high_f": 85.6,
+      "actual_low_f": 70.2,
+      "actual_f": 85.6,
+      "actual_source": "open_meteo",
       "station_id": "KMDW",
       "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
       "decision_chain": {
@@ -2052,10 +2047,10 @@
       "opened_at": null,
       "closed_at": null,
       "resolved_outcome": null,
-      "actual_high_f": null,
-      "actual_low_f": null,
-      "actual_f": null,
-      "actual_source": null,
+      "actual_high_f": 85.6,
+      "actual_low_f": 70.2,
+      "actual_f": 70.2,
+      "actual_source": "open_meteo",
       "station_id": "KMDW",
       "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
       "decision_chain": {
@@ -3177,10 +3172,10 @@
           "opened_at": null,
           "closed_at": null,
           "resolved_outcome": null,
-          "actual_high_f": null,
-          "actual_low_f": null,
-          "actual_f": null,
-          "actual_source": null,
+          "actual_high_f": 85.6,
+          "actual_low_f": 70.2,
+          "actual_f": 85.6,
+          "actual_source": "open_meteo",
           "station_id": "KMDW",
           "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
           "decision_chain": {
@@ -3233,10 +3228,10 @@
           "opened_at": null,
           "closed_at": null,
           "resolved_outcome": null,
-          "actual_high_f": null,
-          "actual_low_f": null,
-          "actual_f": null,
-          "actual_source": null,
+          "actual_high_f": 85.6,
+          "actual_low_f": 70.2,
+          "actual_f": 70.2,
+          "actual_source": "open_meteo",
           "station_id": "KMDW",
           "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
           "decision_chain": {
@@ -4370,18 +4365,18 @@
       ],
       "catalog": [
         {
-          "id": "exp-gas-2",
-          "name": "Experiment 2 \u2014 Gas shock",
-          "status": "active",
-          "allocation_dollars": 100.0,
-          "started_at": "2026-08-09T05:15:53.550083+00:00"
-        },
-        {
           "id": "exp-gas-1",
           "name": "Experiment 1 \u2014 Baseline gas",
           "status": "active",
           "allocation_dollars": 250.0,
           "started_at": "2026-08-09T01:38:02.791448+00:00"
+        },
+        {
+          "id": "exp-gas-2",
+          "name": "Experiment 2 \u2014 Gas shock",
+          "status": "active",
+          "allocation_dollars": 100.0,
+          "started_at": "2026-08-09T05:15:53.550083+00:00"
         }
       ],
       "active": {
