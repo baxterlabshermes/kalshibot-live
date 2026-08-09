@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T05:46:59.640515+00:00",
+  "generated_at": "2026-08-09T05:16:04.743002+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -96,49 +96,30 @@
     "deselected": 6
   },
   "db": {
-    "contracts": 300,
-    "snapshots": 121700,
-    "observations": 16,
-    "resolved": 192,
-    "edge_signals": 75426
+    "contracts": 365,
+    "snapshots": 127012,
+    "observations": 20,
+    "resolved": 240,
+    "edge_signals": 75454
   },
   "health": {
-    "kill_switch": "RED",
-    "kill_switch_since": "2026-08-07T05:42:08",
+    "kill_switch": "GREEN",
+    "kill_switch_since": null,
+    "kill_switch_trigger": null,
+    "kill_switch_reason": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 301.0,
-    "weather_age_mins": 5.0,
-    "market_age_mins": 4.9,
+    "last_cycle_seconds_ago": 11.0,
+    "weather_age_mins": 0.2,
+    "market_age_mins": 0.0,
     "heartbeat_alive": true,
-    "db_size_mb": 64.6,
+    "db_size_mb": 66.0,
     "edge_count": 20,
-    "fill_count": 10,
-    "cycle_signals": 0,
+    "fill_count": 15,
+    "cycle_signals": 1,
     "cycle_intents": 0,
     "cycle_fills": 0,
-    "next_settlement_hours": null,
+    "next_settlement_hours": 0,
     "edge_history": [
-      38.49,
-      38.49,
-      38.49,
-      38.49,
-      38.49,
-      38.49,
-      30.88,
-      30.88,
-      30.88,
-      39.83,
-      30.88,
-      30.88,
-      30.88,
-      35.72,
-      35.72,
-      35.72,
-      35.72,
-      35.72,
-      39.71,
-      34.96,
-      34.96,
       35.71,
       35.71,
       35.71,
@@ -165,501 +146,874 @@
       27.2,
       33.2,
       22.2,
-      32.2
+      32.2,
+      25.89,
+      30.47,
+      28.97,
+      29.47,
+      30.47,
+      30.47,
+      30.47,
+      30.47,
+      20.96,
+      25.72,
+      25.72,
+      25.72,
+      25.72,
+      25.72,
+      25.72,
+      25.72,
+      28.97,
+      20.19,
+      20.19,
+      20.19,
+      20.19
     ],
     "brier_history": [
       0.2309,
-      0.2131
+      0.2131,
+      0.2128
     ]
   },
   "positions": {
-    "cash": 248.8833,
+    "cash": 680.0162,
     "bankroll": 500.0,
     "realized_pnl": -56.7462,
-    "unrealized_pnl": 57.8833,
-    "total_exposure": 676.8918,
-    "exposure_by_city": {},
-    "open_count": 17,
-    "fill_count": 10,
+    "unrealized_pnl": 37.5133,
+    "total_exposure": 743.4418,
+    "exposure_by_city": {
+      "Chicago": 68.95
+    },
+    "open_count": 21,
+    "fill_count": 15,
     "win_rate": 0.2,
     "pnl_source": "kalshi"
   },
-  "open_positions_full": [],
+  "open_positions_full": [
+    {
+      "position_id": "pos-e9f5ddb5bec9",
+      "contract_id": "KXLOWTCHI-26AUG08-B71.5",
+      "contract_label": "Chicago LOW > 71.0\u00b0F 2026-08-08",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 71.0,
+      "condition": ">",
+      "target_date": "2026-08-08",
+      "side": "NO",
+      "size": 28,
+      "entry_price": 0.65,
+      "current_mark": 0.5,
+      "unrealized_pnl": 3.75,
+      "total_cost": 10.25,
+      "status": "open",
+      "opened_at": "2026-08-08T17:43:55",
+      "market_ticker": "KXLOWTCHI-26AUG08-B71.5",
+      "decision_chain": {
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_fetch_time": "2026-08-08T17:43:55",
+        "ensemble_probability": 0.3961,
+        "probability_time": "2026-08-08T17:43:55",
+        "market_price": 0.675,
+        "market_snapshot_time": "2026-08-08T17:43:52",
+        "edge_after_fees": 0.2589,
+        "edge_time": "2026-08-08T17:43:55",
+        "sizing_units": 74,
+        "sizing_exposure": 51.09,
+        "sizing_time": "2026-08-08T17:43:55",
+        "risk_gate": "APPROVED",
+        "risk_gate_time": "2026-08-08T17:43:55",
+        "filled": true,
+        "fill_price": 0.65,
+        "fill_size": 28,
+        "fill_time": "2026-08-08T17:43:55",
+        "order_status": "cancelled",
+        "order_time": "2026-08-08T17:43:55"
+      }
+    },
+    {
+      "position_id": "pos-e7e82545188d",
+      "contract_id": "KXHIGHCHI-26AUG09-T83",
+      "contract_label": "Chicago HIGH < 83.0\u00b0F 2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "condition": "<",
+      "target_date": "2026-08-09",
+      "side": "NO",
+      "size": 5,
+      "entry_price": 0.4,
+      "current_mark": 0.2,
+      "unrealized_pnl": 0.91,
+      "total_cost": 3.09,
+      "status": "open",
+      "opened_at": "2026-08-09T00:31:53",
+      "market_ticker": "KXHIGHCHI-26AUG09-T83",
+      "decision_chain": {
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_fetch_time": "2026-08-09T00:31:53",
+        "ensemble_probability": 0.0853,
+        "probability_time": "2026-08-09T00:31:53",
+        "market_price": 0.41,
+        "market_snapshot_time": "2026-08-09T00:31:51",
+        "edge_after_fees": 0.3047,
+        "edge_time": "2026-08-09T00:31:53",
+        "sizing_units": 121,
+        "sizing_exposure": 51.66,
+        "sizing_time": "2026-08-09T00:31:53",
+        "risk_gate": "APPROVED",
+        "risk_gate_time": "2026-08-09T00:31:53",
+        "filled": true,
+        "fill_price": 0.4,
+        "fill_size": 5,
+        "fill_time": "2026-08-09T00:31:53",
+        "order_status": "cancelled",
+        "order_time": "2026-08-09T00:31:53"
+      }
+    },
+    {
+      "position_id": "pos-5962dffe582b",
+      "contract_id": "KXHIGHCHI-26AUG08-B83.5",
+      "contract_label": "Chicago HIGH > 83.0\u00b0F 2026-08-08",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "condition": ">",
+      "target_date": "2026-08-08",
+      "side": "YES",
+      "size": 98,
+      "entry_price": 0.52,
+      "current_mark": 0.26,
+      "unrealized_pnl": -27.2,
+      "total_cost": 52.68,
+      "status": "open",
+      "opened_at": "2026-08-09T02:08:58",
+      "market_ticker": "KXHIGHCHI-26AUG08-B83.5",
+      "decision_chain": {
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_fetch_time": "2026-08-09T02:08:58",
+        "ensemble_probability": 0.7396,
+        "probability_time": "2026-08-09T02:08:58",
+        "market_price": 0.51,
+        "market_snapshot_time": "2026-08-09T02:08:53",
+        "edge_after_fees": 0.2096,
+        "edge_time": "2026-08-09T02:08:58",
+        "sizing_units": 98,
+        "sizing_exposure": 51.7,
+        "sizing_time": "2026-08-09T02:08:58",
+        "risk_gate": "APPROVED",
+        "risk_gate_time": "2026-08-09T02:08:58",
+        "filled": true,
+        "fill_price": 0.52,
+        "fill_size": 98,
+        "fill_time": "2026-08-09T02:08:58",
+        "order_status": "filled",
+        "order_time": "2026-08-09T02:08:58"
+      }
+    },
+    {
+      "position_id": "pos-58b7c10cf6ce",
+      "contract_id": "KXHIGHCHI-26AUG09-B85.5",
+      "contract_label": "Chicago HIGH > 85.0\u00b0F 2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "condition": ">",
+      "target_date": "2026-08-09",
+      "side": "YES",
+      "size": 9,
+      "entry_price": 0.31,
+      "current_mark": 0.3,
+      "unrealized_pnl": -0.23,
+      "total_cost": 2.93,
+      "status": "open",
+      "opened_at": "2026-08-09T04:26:55",
+      "market_ticker": "KXHIGHCHI-26AUG09-B85.5",
+      "decision_chain": {
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_fetch_time": "2026-08-09T04:26:55",
+        "ensemble_probability": 0.5219,
+        "probability_time": "2026-08-09T04:26:55",
+        "market_price": 0.3,
+        "market_snapshot_time": "2026-08-09T04:26:53",
+        "edge_after_fees": 0.2019,
+        "edge_time": "2026-08-09T04:26:55",
+        "sizing_units": 166,
+        "sizing_exposure": 52.25,
+        "sizing_time": "2026-08-09T04:26:55",
+        "risk_gate": "APPROVED",
+        "risk_gate_time": "2026-08-09T04:26:55",
+        "filled": true,
+        "fill_price": 0.31,
+        "fill_size": 4,
+        "fill_time": "2026-08-09T04:42:16",
+        "order_status": "cancelled",
+        "order_time": "2026-08-09T04:26:55"
+      }
+    }
+  ],
   "timeline": {
     "recent": [
       {
-        "time": "2026-08-07T05:42:00",
+        "time": "2026-08-09T05:16:04",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge +20.2%"
+      },
+      {
+        "time": "2026-08-09T05:15:55",
         "type": "weather",
         "icon": "\u2601\ufe0f",
         "label": "Weather fetched for Miami",
         "detail": "GFS ensemble data"
       },
       {
-        "time": "2026-08-07T05:41:59",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
-      },
-      {
-        "time": "2026-08-07T05:41:58",
+        "time": "2026-08-09T05:15:54",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
         "detail": "Status: alive"
       },
       {
-        "time": "2026-08-07T05:26:39",
+        "time": "2026-08-09T05:15:54",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T05:12:55",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge +20.2%"
+      },
+      {
+        "time": "2026-08-09T05:12:45",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T04:57:36",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge +20.2%"
+      },
+      {
+        "time": "2026-08-09T04:57:25",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T04:57:25",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T04:42:16",
+        "type": "fill",
+        "icon": "\u2705",
+        "label": "Filled 4 \u00d7 Chicago HIGH > 85.0\u00b0F 2026-08-09",
+        "detail": "@31.0\u00a2 each"
+      },
+      {
+        "time": "2026-08-09T04:42:05",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T04:26:55",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge +20.2%"
+      },
+      {
+        "time": "2026-08-09T04:26:55",
+        "type": "fill",
+        "icon": "\u2705",
+        "label": "Filled 5 \u00d7 Chicago HIGH > 85.0\u00b0F 2026-08-09",
+        "detail": "@31.0\u00a2 each"
+      },
+      {
+        "time": "2026-08-09T04:26:45",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T04:11:35",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 83.0\u00b0F",
+        "detail": "BUY_NO edge +29.0%"
+      },
+      {
+        "time": "2026-08-09T03:56:07",
         "type": "weather",
         "icon": "\u2601\ufe0f",
         "label": "Weather fetched for Miami",
         "detail": "GFS ensemble data"
       },
       {
-        "time": "2026-08-07T05:26:38",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
+        "time": "2026-08-09T02:08:58",
+        "type": "fill",
+        "icon": "\u2705",
+        "label": "Filled 98 \u00d7 Chicago HIGH > 83.0\u00b0F 2026-08-08",
+        "detail": "@52.0\u00a2 each"
       },
       {
-        "time": "2026-08-07T05:26:38",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
+        "time": "2026-08-09T00:31:53",
+        "type": "fill",
+        "icon": "\u2705",
+        "label": "Filled 5 \u00d7 Chicago HIGH < 83.0\u00b0F 2026-08-09",
+        "detail": "@40.0\u00a2 each"
       },
       {
-        "time": "2026-08-07T05:11:18",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-07T04:55:56",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-07T04:55:56",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
-      },
-      {
-        "time": "2026-08-07T04:40:36",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-06T23:35:38",
+        "time": "2026-08-08T23:33:18",
         "type": "weather",
         "icon": "\u2601\ufe0f",
         "label": "Weather fetched for Miami",
         "detail": "GFS ensemble data"
       },
       {
-        "time": "2026-08-06T20:43:17",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 78.0\u00b0F",
-        "detail": "BUY_YES edge +32.2%"
+        "time": "2026-08-08T23:33:17",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
       },
       {
-        "time": "2026-08-06T20:37:55",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 78.0\u00b0F",
-        "detail": "BUY_YES edge +22.2%"
-      },
-      {
-        "time": "2026-08-06T20:32:32",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 78.0\u00b0F",
-        "detail": "BUY_YES edge +33.2%"
-      },
-      {
-        "time": "2026-08-06T20:27:11",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 78.0\u00b0F",
-        "detail": "BUY_YES edge +27.2%"
-      },
-      {
-        "time": "2026-08-06T20:21:49",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 78.0\u00b0F",
-        "detail": "BUY_YES edge +28.2%"
-      },
-      {
-        "time": "2026-08-06T14:18:30",
+        "time": "2026-08-08T21:24:06",
         "type": "settlement",
         "icon": "\ud83c\udfc1",
-        "label": "Miami HIGH > 93.0\u00b0F 2026-08-05 resolved",
+        "label": "Chicago HIGH > 84.0\u00b0F 2026-08-07 resolved",
         "detail": "Outcome: NO"
       },
       {
-        "time": "2026-08-06T14:18:30",
+        "time": "2026-08-08T21:24:06",
         "type": "settlement",
         "icon": "\ud83c\udfc1",
-        "label": "Miami HIGH < 86.0\u00b0F 2026-08-05 resolved",
+        "label": "Chicago HIGH > 82.0\u00b0F 2026-08-07 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
+        "time": "2026-08-08T21:24:06",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Chicago LOW > 69.0\u00b0F 2026-08-07 resolved",
         "detail": "Outcome: NO"
       },
       {
-        "time": "2026-08-06T14:18:30",
+        "time": "2026-08-08T21:24:06",
         "type": "settlement",
         "icon": "\ud83c\udfc1",
-        "label": "Miami HIGH > 92.0\u00b0F 2026-08-05 resolved",
+        "label": "Chicago LOW < 62.0\u00b0F 2026-08-07 resolved",
         "detail": "Outcome: NO"
       },
       {
-        "time": "2026-08-06T14:18:30",
+        "time": "2026-08-08T21:24:06",
         "type": "settlement",
         "icon": "\ud83c\udfc1",
-        "label": "Miami HIGH > 90.0\u00b0F 2026-08-05 resolved",
+        "label": "Chicago LOW > 68.0\u00b0F 2026-08-07 resolved",
         "detail": "Outcome: NO"
       },
       {
-        "time": "2026-08-06T14:18:30",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Miami HIGH > 88.0\u00b0F 2026-08-05 resolved",
-        "detail": "Outcome: NO"
-      },
-      {
-        "time": "2026-08-05T16:29:31",
+        "time": "2026-08-08T17:43:55",
         "type": "fill",
         "icon": "\u2705",
-        "label": "Filled 11 \u00d7 Chicago HIGH > 85.0\u00b0F 2026-08-05",
-        "detail": "@10.0\u00a2 each"
-      },
-      {
-        "time": "2026-08-05T06:39:10",
-        "type": "fill",
-        "icon": "\u2705",
-        "label": "Filled 17 \u00d7 Chicago HIGH > 79.0\u00b0F 2026-08-05",
-        "detail": "@17.0\u00a2 each"
-      },
-      {
-        "time": "2026-08-05T01:47:46",
-        "type": "fill",
-        "icon": "\u2705",
-        "label": "Filled 103 \u00d7 Chicago HIGH > 87.0\u00b0F 2026-08-04",
-        "detail": "@13.0\u00a2 each"
-      },
-      {
-        "time": "2026-08-04T22:01:35",
-        "type": "fill",
-        "icon": "\u2705",
-        "label": "Filled 10 \u00d7 Chicago HIGH > 83.0\u00b0F 2026-08-04",
-        "detail": "@36.0\u00a2 each"
-      },
-      {
-        "time": "2026-08-04T21:29:24",
-        "type": "fill",
-        "icon": "\u2705",
-        "label": "Filled 3 \u00d7 Chicago HIGH > 83.0\u00b0F 2026-08-04",
-        "detail": "@32.0\u00a2 each"
+        "label": "Filled 28 \u00d7 Chicago LOW > 71.0\u00b0F 2026-08-08",
+        "detail": "@65.0\u00a2 each"
       }
     ],
     "upcoming": [
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Miami LOW > 81.0\u00b0F settles",
+        "label": "Chicago HIGH > 90.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Miami LOW < 74.0\u00b0F settles",
+        "label": "Chicago HIGH < 83.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami LOW > 80.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami LOW > 78.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami LOW > 76.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami LOW > 74.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami HIGH > 93.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami HIGH < 86.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami HIGH > 92.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami HIGH > 90.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami HIGH > 88.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Miami HIGH > 86.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "Chicago HIGH > 89.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Chicago HIGH < 82.0\u00b0F settles",
+        "label": "Chicago HIGH > 87.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Chicago HIGH > 88.0\u00b0F settles",
+        "label": "Chicago HIGH > 85.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Chicago HIGH > 86.0\u00b0F settles",
+        "label": "Chicago HIGH > 83.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Chicago HIGH > 84.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Chicago HIGH > 82.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Chicago LOW > 69.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "Chicago LOW < 62.0\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "Chicago LOW > 68.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Chicago LOW > 66.0\u00b0F settles",
+        "label": "Chicago LOW < 61.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Chicago LOW > 64.0\u00b0F settles",
+        "label": "Chicago LOW > 67.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "Chicago LOW > 62.0\u00b0F settles",
+        "label": "Chicago LOW > 65.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.105\u00b0F settles",
+        "label": "Chicago LOW > 63.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.1\u00b0F settles",
+        "label": "Chicago LOW > 61.0\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.095\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.09\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.085\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.08\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.075\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.07\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
-        "icon": "\ud83d\udcc5",
-        "label": "US-GAS GAS_PRICE_USD > 4.065\u00b0F settles",
-        "detail": "Today",
-        "urgent": true
-      },
-      {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.06\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.055\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.05\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.045\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.04\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.035\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.03\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07",
+        "time": "2026-08-09",
         "icon": "\ud83d\udcc5",
         "label": "US-GAS GAS_PRICE_USD > 4.025\u00b0F settles",
         "detail": "Today",
         "urgent": true
       },
       {
-        "time": "2026-08-07T11:42:00.123167+00:00",
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.02\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.015\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.01\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.005\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.995\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.99\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.985\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.98\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami LOW > 83.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami LOW < 76.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami LOW > 82.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami LOW > 80.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami LOW > 78.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami LOW > 76.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami HIGH > 94.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami HIGH < 87.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami HIGH > 93.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami HIGH > 91.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami HIGH > 89.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-09",
+        "icon": "\ud83d\udcc5",
+        "label": "Miami HIGH > 87.0\u00b0F settles",
+        "detail": "Today",
+        "urgent": true
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.92\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.9\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.88\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.86\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.28\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.26\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.24\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.22\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.2\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.18\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.16\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.14\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.12\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.1\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.08\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.06\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.04\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.02\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.0\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.98\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.96\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.94\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.03\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 4.01\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.99\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-10",
+        "icon": "\ud83d\udcc5",
+        "label": "US-GAS GAS_PRICE_USD > 3.97\u00b0F settles",
+        "detail": "Tomorrow",
+        "urgent": false
+      },
+      {
+        "time": "2026-08-09T05:20:54.118752+00:00",
+        "icon": "\ud83d\udd04",
+        "label": "Next scan cycle",
+        "detail": "~5 min"
+      },
+      {
+        "time": "2026-08-09T11:15:55.265784+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
         "detail": "~6h"
@@ -667,10 +1021,10 @@
     ]
   },
   "calibration": {
-    "brier": 0.2131,
+    "brier": 0.2128,
     "win_rate": 0.571,
-    "resolved": 192,
-    "observations": 16,
+    "resolved": 240,
+    "observations": 20,
     "signal_market_correlation": 0.0,
     "edge_half_life_minutes": 0.0,
     "records": [
@@ -678,193 +1032,185 @@
         "city": "Chicago",
         "lead": 0,
         "bin": "0.0\u20130.1",
-        "actual": 0.05074776693257184,
-        "brier": 0.050851981310264624,
-        "n": 205211
+        "actual": 0.012716405605935696,
+        "brier": 0.018576283588182453,
+        "n": 97040
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.1\u20130.2",
-        "actual": 0.00164846486709252,
-        "brier": 0.018178110884779643,
-        "n": 14559
+        "actual": 0.004626951995373048,
+        "brier": 0.01787373220518509,
+        "n": 5187
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.2\u20130.3",
-        "actual": 0.3699042506891049,
-        "brier": 0.24422288065772155,
-        "n": 27572
+        "actual": 0.041264266900790166,
+        "brier": 0.10105482801321536,
+        "n": 7973
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.3\u20130.4",
-        "actual": 0.6322626695217701,
-        "brier": 0.2756999714377631,
-        "n": 7005
+        "actual": 0.09391711229946524,
+        "brier": 0.12938785294421795,
+        "n": 2992
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.4\u20130.5",
-        "actual": 0.25639756821716386,
-        "brier": 0.21145272145562177,
-        "n": 14146
+        "actual": 0.1421628189550425,
+        "brier": 0.19750588883845274,
+        "n": 823
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.5\u20130.6",
-        "actual": 0.167458432304038,
-        "brier": 0.28382485640779676,
-        "n": 26102
+        "actual": 0.13315889628924835,
+        "brier": 0.2862019343840156,
+        "n": 21020
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.6\u20130.7",
-        "actual": 0.8354385202019995,
-        "brier": 0.16341955049856885,
-        "n": 243763
+        "actual": 0.8444880803472886,
+        "brier": 0.15925433124038502,
+        "n": 217456
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.7\u20130.8",
-        "actual": 0.755104273803532,
-        "brier": 0.17529178004695128,
-        "n": 45697
+        "actual": 0.3253102670176758,
+        "brier": 0.3841594613452832,
+        "n": 15954
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.8\u20130.9",
-        "actual": 0.9036827195467422,
-        "brier": 0.10292977393115488,
-        "n": 54715
+        "actual": 0.6572228051766352,
+        "brier": 0.24675542375081114,
+        "n": 2859
       },
       {
         "city": "Chicago",
         "lead": 0,
         "bin": "0.9\u20131.0",
-        "actual": 0.33744010951403147,
-        "brier": 0.6627251301796755,
-        "n": 1461
+        "actual": 0.6099808061420345,
+        "brier": 0.38825919098188094,
+        "n": 2605
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.0\u20130.1",
         "actual": 0.0,
-        "brier": 0.0011437941876663747,
-        "n": 79794
+        "brier": 0.0005754029606969472,
+        "n": 48205
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.1\u20130.2",
-        "actual": 0.04205607476635514,
-        "brier": 0.054829003445359924,
-        "n": 19902
+        "actual": 0.08206686930091185,
+        "brier": 0.07705199892706742,
+        "n": 10199
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.2\u20130.3",
-        "actual": 0.11940298507462686,
-        "brier": 0.12102859168462948,
-        "n": 10385
+        "actual": 0.20618556701030927,
+        "brier": 0.1680720236866208,
+        "n": 6014
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.3\u20130.4",
-        "actual": 0.21578947368421053,
-        "brier": 0.1737555877165496,
-        "n": 11780
+        "actual": 0.0,
+        "brier": 0.12951138723216973,
+        "n": 7998
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.4\u20130.5",
         "actual": 0.0,
-        "brier": 0.2248459137116818,
-        "n": 1209
-      },
-      {
-        "city": "Chicago",
-        "lead": 1,
-        "bin": "0.5\u20130.6",
-        "actual": 1.0,
-        "brier": 0.17585848074921634,
-        "n": 713
+        "brier": 0.20395421436004,
+        "n": 372
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.6\u20130.7",
-        "actual": 0.7770034843205574,
-        "brier": 0.20509110395210442,
-        "n": 8897
+        "actual": 0.38392857142857145,
+        "brier": 0.3181832218898811,
+        "n": 3472
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.7\u20130.8",
-        "actual": 0.2696629213483146,
-        "brier": 0.4659969133276279,
-        "n": 2759
+        "actual": 0.0,
+        "brier": 0.6069358840950739,
+        "n": 2015
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.8\u20130.9",
-        "actual": 0.7411944869831547,
-        "brier": 0.21210783645711792,
-        "n": 20243
+        "actual": 0.5050505050505051,
+        "brier": 0.3878421754891381,
+        "n": 12276
       },
       {
         "city": "Chicago",
         "lead": 1,
         "bin": "0.9\u20131.0",
-        "actual": 0.917144996256551,
-        "brier": 0.07502632909244131,
-        "n": 124217
+        "actual": 0.8925736961451247,
+        "brier": 0.09692997909205164,
+        "n": 109368
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.0\u20130.1",
-        "actual": 0.3579777243417196,
-        "brier": 0.3493113616498184,
-        "n": 83589
+        "actual": 0.3055799006719252,
+        "brier": 0.29190845851181935,
+        "n": 6846
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.1\u20130.2",
-        "actual": 0.20017527293822862,
-        "brier": 0.16515903059195114,
-        "n": 162033
+        "actual": 0.13851124449440427,
+        "brier": 0.11758650869800923,
+        "n": 141447
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.2\u20130.3",
-        "actual": 0.11396627896492652,
-        "brier": 0.1399644282269683,
-        "n": 11091
+        "actual": 0.11897077281692667,
+        "brier": 0.14228303514305157,
+        "n": 11154
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.3\u20130.4",
-        "actual": 0.8851351351351351,
-        "brier": 0.38146020412226345,
-        "n": 4588
+        "actual": 0.2535410764872521,
+        "brier": 0.18749941672651166,
+        "n": 706
       },
       {
         "city": "Miami",
@@ -879,72 +1225,64 @@
         "lead": 0,
         "bin": "0.5\u20130.6",
         "actual": 1.0,
-        "brier": 0.2203275045544619,
-        "n": 8056
+        "brier": 0.21741922311937648,
+        "n": 316
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.6\u20130.7",
-        "actual": 0.04051772650534609,
-        "brier": 0.4657361639681861,
-        "n": 1777
+        "actual": 0.08382590005373455,
+        "brier": 0.4514777281188149,
+        "n": 1861
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.7\u20130.8",
-        "actual": 0.5170454545454546,
-        "brier": 0.3175098986867287,
-        "n": 27280
+        "actual": 0.47863078749505344,
+        "brier": 0.3391389827910075,
+        "n": 25270
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.8\u20130.9",
-        "actual": 0.5900036707379438,
-        "brier": 0.2978056010301932,
-        "n": 318737
+        "actual": 0.4778908373334625,
+        "brier": 0.369748590792346,
+        "n": 165203
       },
       {
         "city": "Miami",
         "lead": 0,
         "bin": "0.9\u20131.0",
-        "actual": 0.6679245283018868,
-        "brier": 0.3321293239578041,
-        "n": 1855
+        "actual": 0.6715001318217769,
+        "brier": 0.3264595798218593,
+        "n": 3793
       },
       {
         "city": "Miami",
         "lead": 1,
         "bin": "0.0\u20130.1",
-        "actual": 0.42411764705882354,
-        "brier": 0.4094950113239365,
-        "n": 52700
+        "actual": 0.19771863117870722,
+        "brier": 0.16400849875169843,
+        "n": 8153
       },
       {
         "city": "Miami",
         "lead": 1,
         "bin": "0.1\u20130.2",
-        "actual": 0.20689655172413793,
-        "brier": 0.1662373868914363,
-        "n": 20677
+        "actual": 0.1734375,
+        "brier": 0.14357440802448562,
+        "n": 19840
       },
       {
         "city": "Miami",
         "lead": 1,
         "bin": "0.2\u20130.3",
-        "actual": 0.07380373073803731,
-        "brier": 0.08801252776563435,
-        "n": 38223
-      },
-      {
-        "city": "Miami",
-        "lead": 1,
-        "bin": "0.3\u20130.4",
-        "actual": 1.0,
-        "brier": 0.37565036420396036,
-        "n": 1488
+        "actual": 0.01710445937690898,
+        "brier": 0.059589280339500006,
+        "n": 50747
       },
       {
         "city": "Miami",
@@ -966,381 +1304,426 @@
         "city": "Miami",
         "lead": 1,
         "bin": "0.6\u20130.7",
-        "actual": 0.5808080808080808,
-        "brier": 0.25311912044481133,
-        "n": 6138
+        "actual": 0.2719298245614035,
+        "brier": 0.329216642021276,
+        "n": 3534
       },
       {
         "city": "Miami",
         "lead": 1,
         "bin": "0.7\u20130.8",
-        "actual": 0.4928774928774929,
-        "brier": 0.3355251762432843,
-        "n": 10881
+        "actual": 0.22943722943722944,
+        "brier": 0.47867405761406,
+        "n": 7161
       },
       {
         "city": "Miami",
         "lead": 1,
         "bin": "0.8\u20130.9",
-        "actual": 0.5463780918727915,
-        "brier": 0.33257775218574037,
-        "n": 70184
+        "actual": 0.5090845562543675,
+        "brier": 0.357536189002296,
+        "n": 88722
       },
       {
         "city": "Miami",
         "lead": 1,
         "bin": "0.9\u20131.0",
-        "actual": 0.6034691407825736,
-        "brier": 0.3749375083689877,
-        "n": 76849
+        "actual": 0.34750462107208874,
+        "brier": 0.5680384342404268,
+        "n": 16771
       }
     ]
   },
   "performance": {
-    "brier_score": 0.2131,
+    "brier_score": 0.2128,
     "win_rate": 0.2,
     "pnl_total": -56.7462,
     "pnl_source": "kalshi",
-    "fee_total": 2.4787,
-    "sharpe_like": 0.5328446845644973,
-    "sortino": 34.401480795555194,
-    "calmar": 20.89433962264169,
+    "fee_total": 4.7958,
+    "sharpe_like": 0.4934829488614766,
+    "sortino": 30.101295696110792,
+    "calmar": 18.28254716981148,
     "profit_factor": 104.35733333333334,
     "max_drawdown": null
   },
   "competition": {
-    "avg_spread": 0.4991119375651537,
+    "avg_spread": 0.5301878927710997,
     "avg_volume_24h": 0.0,
-    "signal_market_correlation": -0.00881951928830239,
+    "signal_market_correlation": -0.004221069629649297,
     "edge_half_life_minutes": 0.0,
-    "n_snapshots": 106479,
-    "n_signals": 63066,
-    "computed_at": "2026-08-07T05:47:08.293627+00:00"
+    "n_snapshots": 78449,
+    "n_signals": 34342,
+    "computed_at": "2026-08-09T05:16:12.536031+00:00"
   },
   "alerts": [],
   "monitoring": {
-    "system_events": 301,
+    "system_events": 521,
     "recent_errors": [],
-    "calibration_improvement_pct": 22.0,
-    "calibration_validated": 17610,
-    "liquid_contracts": 158,
-    "total_liquidity_contracts": 158
+    "calibration_improvement_pct": 23.7,
+    "calibration_validated": 20046,
+    "liquid_contracts": 206,
+    "total_liquidity_contracts": 206
   },
   "markets": [
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 85.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 21,
-      "edge_pct": 32,
+      "model_pct": 52,
+      "market_pct": 30,
+      "edge_pct": 20,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 85.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 31,
-      "edge_pct": 22,
+      "model_pct": 52,
+      "market_pct": 30,
+      "edge_pct": 20,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 85.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 20,
-      "edge_pct": 33,
+      "model_pct": 52,
+      "market_pct": 30,
+      "edge_pct": 20,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 85.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 26,
-      "edge_pct": 27,
+      "model_pct": 52,
+      "market_pct": 30,
+      "edge_pct": 20,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 25,
-      "edge_pct": 28,
-      "verdict": "Strong edge \u2014 market is wrong"
-    },
-    {
-      "city": "Chicago",
-      "date": "2026-08-06",
-      "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 24,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 40,
       "edge_pct": 29,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 24,
-      "edge_pct": 29,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 28,
-      "edge_pct": 26,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 29,
-      "edge_pct": 24,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 30,
-      "edge_pct": 23,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 30,
-      "edge_pct": 23,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 30,
-      "edge_pct": 23,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 29,
-      "edge_pct": 24,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 18,
-      "edge_pct": 36,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 26,
-      "edge_pct": 28,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 26,
-      "edge_pct": 28,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 26,
-      "edge_pct": 28,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
-      "condition": ">",
-      "model_pct": 55,
-      "market_pct": 26,
-      "edge_pct": 28,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-08",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 18,
-      "edge_pct": 36,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     },
     {
       "city": "Chicago",
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "metric": "high",
-      "threshold": 78.0,
+      "threshold": 83.0,
+      "condition": "<",
+      "model_pct": 9,
+      "market_pct": 41,
+      "edge_pct": 30,
+      "verdict": "Strong edge \u2014 market is wrong"
+    },
+    {
+      "city": "Chicago",
+      "date": "2026-08-08",
+      "metric": "high",
+      "threshold": 83.0,
       "condition": ">",
-      "model_pct": 55,
-      "market_pct": 18,
-      "edge_pct": 36,
+      "model_pct": 74,
+      "market_pct": 51,
+      "edge_pct": 21,
       "verdict": "Strong edge \u2014 market is wrong"
     }
   ],
   "signals": [
     {
-      "date": "2026-08-06",
+      "date": "2026-08-09",
       "city": "Chicago",
       "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.21,
-      "edge": 0.322
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.31,
-      "edge": 0.222
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.2,
-      "edge": 0.332
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.26,
-      "edge": 0.272
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.25,
-      "edge": 0.282
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.24,
-      "edge": 0.292
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.24,
-      "edge": 0.292
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.275,
-      "edge": 0.257
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
-      "market_prob": 0.29,
-      "edge": 0.242
-    },
-    {
-      "date": "2026-08-06",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 78.0,
-      "model_prob": 0.552,
+      "threshold": 85.0,
+      "model_prob": 0.522,
       "market_prob": 0.3,
-      "edge": 0.232
+      "edge": 0.202
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "model_prob": 0.522,
+      "market_prob": 0.3,
+      "edge": 0.202
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "model_prob": 0.522,
+      "market_prob": 0.3,
+      "edge": 0.202
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "model_prob": 0.522,
+      "market_prob": 0.3,
+      "edge": 0.202
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "model_prob": 0.085,
+      "market_prob": 0.395,
+      "edge": 0.29
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "model_prob": 0.74,
+      "market_prob": 0.51,
+      "edge": 0.21
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "model_prob": 0.085,
+      "market_prob": 0.41,
+      "edge": 0.305
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "model_prob": 0.74,
+      "market_prob": 0.51,
+      "edge": 0.21
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "model_prob": 0.085,
+      "market_prob": 0.41,
+      "edge": 0.305
+    },
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "model_prob": 0.74,
+      "market_prob": 0.51,
+      "edge": 0.21
     }
   ],
   "fills": [
+    {
+      "timestamp": "2026-08-09T04:42:16",
+      "contract_label": "Chicago HIGH > 85.0\u00b0F 2026-08-09",
+      "size": 4,
+      "price": 0.31,
+      "fee": 0.06,
+      "cost": 1.24,
+      "is_paper": false
+    },
+    {
+      "timestamp": "2026-08-09T04:26:55",
+      "contract_label": "Chicago HIGH > 85.0\u00b0F 2026-08-09",
+      "size": 5,
+      "price": 0.31,
+      "fee": 0.08,
+      "cost": 1.55,
+      "is_paper": false
+    },
+    {
+      "timestamp": "2026-08-09T02:08:58",
+      "contract_label": "Chicago HIGH > 83.0\u00b0F 2026-08-08",
+      "size": 98,
+      "price": 0.52,
+      "fee": 1.72,
+      "cost": 50.96,
+      "is_paper": false
+    },
+    {
+      "timestamp": "2026-08-09T00:31:53",
+      "contract_label": "Chicago HIGH < 83.0\u00b0F 2026-08-09",
+      "size": 5,
+      "price": 0.4,
+      "fee": 0.09,
+      "cost": 2.0,
+      "is_paper": false
+    },
+    {
+      "timestamp": "2026-08-08T17:43:55",
+      "contract_label": "Chicago LOW > 71.0\u00b0F 2026-08-08",
+      "size": 28,
+      "price": 0.65,
+      "fee": 0.45,
+      "cost": 18.2,
+      "is_paper": false
+    },
     {
       "timestamp": "2026-08-05T16:29:31",
       "contract_label": "Chicago HIGH > 85.0\u00b0F 2026-08-05",
@@ -1586,6 +1969,118 @@
       "kalshi_exposure": 124.61
     },
     {
+      "position_id": "kx-KXHIGHCHI-26AUG08-B83.5",
+      "contract_label": "Chicago HIGH > 83.0\u00b0F 2026-08-08",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "condition": ">",
+      "target_date": "2026-08-08",
+      "side": "BUY_YES",
+      "side_raw": "buy",
+      "size": 98,
+      "entry_price": 0.52,
+      "total_cost": 50.96,
+      "status": "open",
+      "pnl": -25.48,
+      "pnl_type": "unrealized",
+      "pnl_confidence": "low",
+      "pnl_confidence_reason": "no book",
+      "pnl_source": "kalshi",
+      "mark_source": "mid",
+      "best_bid": 0.0,
+      "best_ask": 0.52,
+      "spread": 0.52,
+      "mark_price": 0.26,
+      "verdict": "open",
+      "opened_at": null,
+      "closed_at": null,
+      "resolved_outcome": null,
+      "actual_high_f": null,
+      "actual_low_f": null,
+      "actual_f": null,
+      "actual_source": null,
+      "station_id": "KMDW",
+      "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
+      "decision_chain": {
+        "side_label": "BUY_YES",
+        "source": "kalshi",
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_probability": 0.7396,
+        "raw_probability": 0.7396,
+        "market_price": 0.51,
+        "edge_after_fees": 0.2096,
+        "edge_time": "2026-08-09T02:08:58",
+        "sizing_units": 98,
+        "sizing_exposure": 51.7,
+        "risk_gate": "APPROVED",
+        "filled": true,
+        "fill_price": 0.52,
+        "fills_price": 0.52,
+        "fill_size": 98
+      },
+      "ticker": "KXHIGHCHI-26AUG08-B83.5",
+      "kalshi_fees": 1.7123,
+      "kalshi_realized": 0.0,
+      "kalshi_exposure": 50.96
+    },
+    {
+      "position_id": "kx-KXLOWTCHI-26AUG08-B71.5",
+      "contract_label": "Chicago LOW > 71.0\u00b0F 2026-08-08",
+      "city": "Chicago",
+      "metric": "low",
+      "threshold": 71.0,
+      "condition": ">",
+      "target_date": "2026-08-08",
+      "side": "BUY_NO",
+      "side_raw": "sell",
+      "size": 28,
+      "entry_price": 0.35,
+      "total_cost": 9.8,
+      "status": "open",
+      "pnl": 4.2,
+      "pnl_type": "unrealized",
+      "pnl_confidence": "low",
+      "pnl_confidence_reason": "no book",
+      "pnl_source": "kalshi",
+      "mark_source": "mid",
+      "best_bid": 0.0,
+      "best_ask": 1.0,
+      "spread": 1.0,
+      "mark_price": 0.5,
+      "verdict": "open",
+      "opened_at": null,
+      "closed_at": null,
+      "resolved_outcome": null,
+      "actual_high_f": null,
+      "actual_low_f": null,
+      "actual_f": null,
+      "actual_source": null,
+      "station_id": "KMDW",
+      "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
+      "decision_chain": {
+        "side_label": "BUY_NO",
+        "source": "kalshi",
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_probability": 0.3961,
+        "raw_probability": 0.3961,
+        "market_price": 0.675,
+        "edge_after_fees": 0.2589,
+        "edge_time": "2026-08-08T17:43:55",
+        "sizing_units": 74,
+        "sizing_exposure": 51.09,
+        "risk_gate": "APPROVED",
+        "filled": true,
+        "fill_price": 0.65,
+        "fills_price": 0.65,
+        "fill_size": 28
+      },
+      "ticker": "KXLOWTCHI-26AUG08-B71.5",
+      "kalshi_fees": 0.4459,
+      "kalshi_realized": 0.0,
+      "kalshi_exposure": 9.8
+    },
+    {
       "position_id": "kx-KXLOWTCHI-26AUG04-B64.5",
       "contract_label": "Chicago LOW > 64.0\u00b0F 2026-08-04",
       "city": "Chicago",
@@ -1789,6 +2284,62 @@
       "kalshi_exposure": 3.52
     },
     {
+      "position_id": "kx-KXHIGHCHI-26AUG09-T83",
+      "contract_label": "Chicago HIGH < 83.0\u00b0F 2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 83.0,
+      "condition": "<",
+      "target_date": "2026-08-09",
+      "side": "BUY_NO",
+      "side_raw": "sell",
+      "size": 5,
+      "entry_price": 0.6,
+      "total_cost": 3.0,
+      "status": "open",
+      "pnl": 1.0,
+      "pnl_type": "unrealized",
+      "pnl_confidence": "low",
+      "pnl_confidence_reason": "no book",
+      "pnl_source": "kalshi",
+      "mark_source": "mid",
+      "best_bid": 0.0,
+      "best_ask": 0.4,
+      "spread": 0.4,
+      "mark_price": 0.8,
+      "verdict": "open",
+      "opened_at": null,
+      "closed_at": null,
+      "resolved_outcome": null,
+      "actual_high_f": null,
+      "actual_low_f": null,
+      "actual_f": null,
+      "actual_source": null,
+      "station_id": "KMDW",
+      "narrative": "Open on Kalshi \u2014 settles 2026-08-09.",
+      "decision_chain": {
+        "side_label": "BUY_NO",
+        "source": "kalshi",
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_probability": 0.0853,
+        "raw_probability": 0.0853,
+        "market_price": 0.41,
+        "edge_after_fees": 0.3047,
+        "edge_time": "2026-08-09T00:31:53",
+        "sizing_units": 121,
+        "sizing_exposure": 51.66,
+        "risk_gate": "APPROVED",
+        "filled": true,
+        "fill_price": 0.4,
+        "fills_price": 0.4,
+        "fill_size": 5
+      },
+      "ticker": "KXHIGHCHI-26AUG09-T83",
+      "kalshi_fees": 0.084,
+      "kalshi_realized": 0.0,
+      "kalshi_exposure": 3.0
+    },
+    {
       "position_id": "kx-KXHIGHCHI-26AUG05-B79.5",
       "contract_label": "Chicago HIGH > 79.0\u00b0F 2026-08-05",
       "city": "Chicago",
@@ -1895,6 +2446,62 @@
       "kalshi_fees": 0.0,
       "kalshi_realized": 0.0,
       "kalshi_exposure": 2.8
+    },
+    {
+      "position_id": "kx-KXHIGHCHI-26AUG09-B85.5",
+      "contract_label": "Chicago HIGH > 85.0\u00b0F 2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "condition": ">",
+      "target_date": "2026-08-09",
+      "side": "BUY_YES",
+      "side_raw": "buy",
+      "size": 9,
+      "entry_price": 0.31,
+      "total_cost": 2.79,
+      "status": "open",
+      "pnl": -0.09,
+      "pnl_type": "unrealized",
+      "pnl_confidence": "high",
+      "pnl_confidence_reason": "",
+      "pnl_source": "kalshi",
+      "mark_source": "book",
+      "best_bid": 0.29,
+      "best_ask": 0.31,
+      "spread": 0.02,
+      "mark_price": 0.3,
+      "verdict": "open",
+      "opened_at": null,
+      "closed_at": null,
+      "resolved_outcome": null,
+      "actual_high_f": null,
+      "actual_low_f": null,
+      "actual_f": null,
+      "actual_source": null,
+      "station_id": "KMDW",
+      "narrative": "Open on Kalshi \u2014 settles 2026-08-09.",
+      "decision_chain": {
+        "side_label": "BUY_YES",
+        "source": "kalshi",
+        "ensemble_model": "GFS Ensemble",
+        "ensemble_probability": 0.5219,
+        "raw_probability": 0.5219,
+        "market_price": 0.3,
+        "edge_after_fees": 0.2019,
+        "edge_time": "2026-08-09T04:26:55",
+        "sizing_units": 166,
+        "sizing_exposure": 52.25,
+        "risk_gate": "APPROVED",
+        "filled": true,
+        "fill_price": 0.31,
+        "fills_price": 0.31,
+        "fill_size": 4
+      },
+      "ticker": "KXHIGHCHI-26AUG09-B85.5",
+      "kalshi_fees": 0.0749,
+      "kalshi_realized": 0.0,
+      "kalshi_exposure": 2.79
     },
     {
       "position_id": "kx-KXHIGHCHI-26AUG04-T88",
@@ -2365,44 +2972,41 @@
     }
   ],
   "kalshi_portfolio": {
-    "cash": 248.8833,
-    "portfolio_value": 480.62,
+    "cash": 680.0162,
+    "portfolio_value": 545.21,
     "bankroll": 500.0,
-    "exposure": 676.8918,
+    "exposure": 743.4418,
     "realized_pnl": -56.7462,
-    "unrealized_pnl": 57.8833,
+    "unrealized_pnl": 37.5133,
     "pnl_source": "kalshi"
   },
   "experiments": {
     "active_experiment_id": "exp-1",
     "catalog": [
       {
-        "id": "exp-1-setup",
-        "name": "Experiment 1 (setup / scar era)",
-        "status": "archived",
-        "allocation_dollars": 500.0,
-        "started_at": "2026-08-07T02:22:18.614124+00:00"
-      },
-      {
         "id": "exp-1",
-        "name": "Experiment 1",
-        "status": "waiting_for_clear",
+        "name": "Experiment 1 \u2014 Baseline weather",
+        "status": "active",
         "allocation_dollars": 500.0,
-        "started_at": null
+        "started_at": "2026-08-08T17:16:38.868716+00:00"
       }
     ],
     "active": {
       "id": "exp-1",
-      "name": "Experiment 1",
-      "status": "waiting_for_clear",
+      "name": "Experiment 1 \u2014 Baseline weather",
+      "status": "active",
       "allocation_dollars": 500.0,
       "duration_days": 14,
-      "started_at": null,
-      "waiting_for_clear": true,
-      "notes": "Waiting for old closed-market positions to settle on Kalshi. Bot stopped. Real Exp1 clock starts after CLEAR via scripts/start_experiment_1.py. Weather CHI+MIA, $500, 14 days.",
+      "started_at": "2026-08-08T17:16:38.868716+00:00",
+      "day_index": 0,
+      "tracking_mode": "funded_slice",
+      "waiting_for_clear": false,
+      "waiting_for_funding": false,
+      "waiting": false,
+      "notes": "Baseline weather Exp1 (D-96): frozen default knobs + $500 funded slice filter. Kalshi playground may hold scar; Exp1 tab filters fills/orders after started_at. One knob family per later experiment.",
       "protocol": {
         "pass": [
-          "net_pnl_after_fees >= 0",
+          "net_pnl_after_fees >= 0 on Exp1 fills only",
           "max_drawdown <= 15% of 500",
           "brier_better_than_market",
           "no_cancel_dupe_ledger_corruption"
@@ -2413,15 +3017,363 @@
           "cancel_dupe_recurs"
         ]
       },
-      "baseline": null,
-      "account_cash": 248.8833,
-      "account_portfolio_value": 480.62,
+      "parameters": {
+        "name": "Experiment 1 \u2014 Baseline weather",
+        "question": "With default knobs and clean execution hygiene, can a $500 weather slice show a path to profitability over 14 days?",
+        "duration_days": 14,
+        "universe": {
+          "vertical": "weather",
+          "cities": [
+            "CHI",
+            "MIA"
+          ],
+          "gas": false
+        },
+        "edge_entry": {
+          "min_edge_after_fees": 0.02,
+          "min_edge_label": "2% (C-9)",
+          "price_band_cents": [
+            5,
+            95
+          ],
+          "max_spread_cents": 10,
+          "directions": [
+            "BUY_YES",
+            "BUY_NO"
+          ]
+        },
+        "sizing_risk": {
+          "allocation_dollars": 500.0,
+          "kelly_fraction": 0.25,
+          "max_position_pct": 0.05,
+          "max_position_dollars_at_ref": 50.0,
+          "max_city_exposure_pct": 0.2,
+          "max_total_exposure_pct": 0.3,
+          "max_correlated_exposure_pct": 0.15,
+          "max_open_contracts": 20,
+          "max_new_per_cycle": 5,
+          "min_cash_reserve_pct": 0.4,
+          "reference_bankroll_dollars": 1000.0
+        },
+        "execution": {
+          "order_ttl_seconds": 900,
+          "duplicate_prevention": "one_resting_per_contract",
+          "active_scan_seconds": 300,
+          "overnight_scan_seconds": 900,
+          "mode": "kalshi_demo",
+          "cancel_on_exchange": true
+        },
+        "scorecard_rules": {
+          "slice_pnl": {
+            "pass": ">= 0 at day 14",
+            "watch": "oscillating",
+            "fail": null
+          },
+          "max_drawdown_pct": {
+            "pass": "<= 0.15",
+            "watch": "0.10\u20130.15",
+            "fail": "> 0.15 or K-4"
+          },
+          "brier_vs_market": {
+            "pass": "better",
+            "watch": "flat",
+            "fail": "worse 7d+"
+          },
+          "fill_hygiene": {
+            "pass": "0 blind fills / cancel orphans",
+            "watch": "anomaly logged",
+            "fail": "cancel/dupe corruption recurs"
+          },
+          "kill_switch": {
+            "pass": "GREEN (brief YELLOW auto-ok)",
+            "watch": "YELLOW latch",
+            "fail": "RED"
+          }
+        },
+        "roadmap_note": "Exp2=C-9 only; Exp3=C-8 only; Exp4=cities (LA) after Exp1 evidence"
+      },
+      "scorecard": {
+        "overall": "watch",
+        "chips": [
+          {
+            "id": "slice_pnl",
+            "label": "Slice P&L",
+            "state": "watch",
+            "detail": "$-40.74 \u00b7 day 0"
+          },
+          {
+            "id": "drawdown",
+            "label": "Drawdown",
+            "state": "pass",
+            "detail": "8.1%"
+          },
+          {
+            "id": "brier",
+            "label": "Brier",
+            "state": "pass",
+            "detail": "0.213"
+          },
+          {
+            "id": "hygiene",
+            "label": "Fill hygiene",
+            "state": "pass",
+            "detail": "clean"
+          },
+          {
+            "id": "kill",
+            "label": "Kill switch",
+            "state": "pass",
+            "detail": "GREEN"
+          }
+        ],
+        "parameters_name": "Experiment 1 \u2014 Baseline weather"
+      },
+      "baseline": {
+        "cash": 748.8833,
+        "portfolio_value": 480.62,
+        "account_cash_at_start": 748.8833,
+        "slice_cash": 500.0
+      },
+      "pre_fund_cash": 248.8833,
+      "funded_dollars": 500.0,
+      "account_cash": 680.0162,
+      "account_portfolio_value": 545.21,
+      "slice_deployed": 66.55,
+      "slice_remaining": 433.45,
+      "slice_pnl": -40.74,
+      "slice_fees": 2.3171,
       "pnl_vs_baseline_pv": null,
-      "realized_since_start": null,
-      "open_count": 0,
+      "realized_since_start": -20.37,
+      "open_count": 4,
       "scar_open_count": 17,
-      "fill_count_since_start": 0,
-      "open_cards": [],
+      "fill_count_since_start": 5,
+      "order_count_since_start": 4,
+      "open_cards": [
+        {
+          "position_id": "kx-KXHIGHCHI-26AUG08-B83.5",
+          "contract_label": "Chicago HIGH > 83.0\u00b0F 2026-08-08",
+          "city": "Chicago",
+          "metric": "high",
+          "threshold": 83.0,
+          "condition": ">",
+          "target_date": "2026-08-08",
+          "side": "BUY_YES",
+          "side_raw": "buy",
+          "size": 98,
+          "entry_price": 0.52,
+          "total_cost": 50.96,
+          "status": "open",
+          "pnl": -25.48,
+          "pnl_type": "unrealized",
+          "pnl_confidence": "low",
+          "pnl_confidence_reason": "no book",
+          "pnl_source": "kalshi",
+          "mark_source": "mid",
+          "best_bid": 0.0,
+          "best_ask": 0.52,
+          "spread": 0.52,
+          "mark_price": 0.26,
+          "verdict": "open",
+          "opened_at": null,
+          "closed_at": null,
+          "resolved_outcome": null,
+          "actual_high_f": null,
+          "actual_low_f": null,
+          "actual_f": null,
+          "actual_source": null,
+          "station_id": "KMDW",
+          "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
+          "decision_chain": {
+            "side_label": "BUY_YES",
+            "source": "kalshi",
+            "ensemble_model": "GFS Ensemble",
+            "ensemble_probability": 0.7396,
+            "raw_probability": 0.7396,
+            "market_price": 0.51,
+            "edge_after_fees": 0.2096,
+            "edge_time": "2026-08-09T02:08:58",
+            "sizing_units": 98,
+            "sizing_exposure": 51.7,
+            "risk_gate": "APPROVED",
+            "filled": true,
+            "fill_price": 0.52,
+            "fills_price": 0.52,
+            "fill_size": 98
+          },
+          "ticker": "KXHIGHCHI-26AUG08-B83.5",
+          "kalshi_fees": 1.7123,
+          "kalshi_realized": 0.0,
+          "kalshi_exposure": 50.96
+        },
+        {
+          "position_id": "kx-KXLOWTCHI-26AUG08-B71.5",
+          "contract_label": "Chicago LOW > 71.0\u00b0F 2026-08-08",
+          "city": "Chicago",
+          "metric": "low",
+          "threshold": 71.0,
+          "condition": ">",
+          "target_date": "2026-08-08",
+          "side": "BUY_NO",
+          "side_raw": "sell",
+          "size": 28,
+          "entry_price": 0.35,
+          "total_cost": 9.8,
+          "status": "open",
+          "pnl": 4.2,
+          "pnl_type": "unrealized",
+          "pnl_confidence": "low",
+          "pnl_confidence_reason": "no book",
+          "pnl_source": "kalshi",
+          "mark_source": "mid",
+          "best_bid": 0.0,
+          "best_ask": 1.0,
+          "spread": 1.0,
+          "mark_price": 0.5,
+          "verdict": "open",
+          "opened_at": null,
+          "closed_at": null,
+          "resolved_outcome": null,
+          "actual_high_f": null,
+          "actual_low_f": null,
+          "actual_f": null,
+          "actual_source": null,
+          "station_id": "KMDW",
+          "narrative": "Open on Kalshi \u2014 settles 2026-08-08.",
+          "decision_chain": {
+            "side_label": "BUY_NO",
+            "source": "kalshi",
+            "ensemble_model": "GFS Ensemble",
+            "ensemble_probability": 0.3961,
+            "raw_probability": 0.3961,
+            "market_price": 0.675,
+            "edge_after_fees": 0.2589,
+            "edge_time": "2026-08-08T17:43:55",
+            "sizing_units": 74,
+            "sizing_exposure": 51.09,
+            "risk_gate": "APPROVED",
+            "filled": true,
+            "fill_price": 0.65,
+            "fills_price": 0.65,
+            "fill_size": 28
+          },
+          "ticker": "KXLOWTCHI-26AUG08-B71.5",
+          "kalshi_fees": 0.4459,
+          "kalshi_realized": 0.0,
+          "kalshi_exposure": 9.8
+        },
+        {
+          "position_id": "kx-KXHIGHCHI-26AUG09-T83",
+          "contract_label": "Chicago HIGH < 83.0\u00b0F 2026-08-09",
+          "city": "Chicago",
+          "metric": "high",
+          "threshold": 83.0,
+          "condition": "<",
+          "target_date": "2026-08-09",
+          "side": "BUY_NO",
+          "side_raw": "sell",
+          "size": 5,
+          "entry_price": 0.6,
+          "total_cost": 3.0,
+          "status": "open",
+          "pnl": 1.0,
+          "pnl_type": "unrealized",
+          "pnl_confidence": "low",
+          "pnl_confidence_reason": "no book",
+          "pnl_source": "kalshi",
+          "mark_source": "mid",
+          "best_bid": 0.0,
+          "best_ask": 0.4,
+          "spread": 0.4,
+          "mark_price": 0.8,
+          "verdict": "open",
+          "opened_at": null,
+          "closed_at": null,
+          "resolved_outcome": null,
+          "actual_high_f": null,
+          "actual_low_f": null,
+          "actual_f": null,
+          "actual_source": null,
+          "station_id": "KMDW",
+          "narrative": "Open on Kalshi \u2014 settles 2026-08-09.",
+          "decision_chain": {
+            "side_label": "BUY_NO",
+            "source": "kalshi",
+            "ensemble_model": "GFS Ensemble",
+            "ensemble_probability": 0.0853,
+            "raw_probability": 0.0853,
+            "market_price": 0.41,
+            "edge_after_fees": 0.3047,
+            "edge_time": "2026-08-09T00:31:53",
+            "sizing_units": 121,
+            "sizing_exposure": 51.66,
+            "risk_gate": "APPROVED",
+            "filled": true,
+            "fill_price": 0.4,
+            "fills_price": 0.4,
+            "fill_size": 5
+          },
+          "ticker": "KXHIGHCHI-26AUG09-T83",
+          "kalshi_fees": 0.084,
+          "kalshi_realized": 0.0,
+          "kalshi_exposure": 3.0
+        },
+        {
+          "position_id": "kx-KXHIGHCHI-26AUG09-B85.5",
+          "contract_label": "Chicago HIGH > 85.0\u00b0F 2026-08-09",
+          "city": "Chicago",
+          "metric": "high",
+          "threshold": 85.0,
+          "condition": ">",
+          "target_date": "2026-08-09",
+          "side": "BUY_YES",
+          "side_raw": "buy",
+          "size": 9,
+          "entry_price": 0.31,
+          "total_cost": 2.79,
+          "status": "open",
+          "pnl": -0.09,
+          "pnl_type": "unrealized",
+          "pnl_confidence": "high",
+          "pnl_confidence_reason": "",
+          "pnl_source": "kalshi",
+          "mark_source": "book",
+          "best_bid": 0.29,
+          "best_ask": 0.31,
+          "spread": 0.02,
+          "mark_price": 0.3,
+          "verdict": "open",
+          "opened_at": null,
+          "closed_at": null,
+          "resolved_outcome": null,
+          "actual_high_f": null,
+          "actual_low_f": null,
+          "actual_f": null,
+          "actual_source": null,
+          "station_id": "KMDW",
+          "narrative": "Open on Kalshi \u2014 settles 2026-08-09.",
+          "decision_chain": {
+            "side_label": "BUY_YES",
+            "source": "kalshi",
+            "ensemble_model": "GFS Ensemble",
+            "ensemble_probability": 0.5219,
+            "raw_probability": 0.5219,
+            "market_price": 0.3,
+            "edge_after_fees": 0.2019,
+            "edge_time": "2026-08-09T04:26:55",
+            "sizing_units": 166,
+            "sizing_exposure": 52.25,
+            "risk_gate": "APPROVED",
+            "filled": true,
+            "fill_price": 0.31,
+            "fills_price": 0.31,
+            "fill_size": 4
+          },
+          "ticker": "KXHIGHCHI-26AUG09-B85.5",
+          "kalshi_fees": 0.0749,
+          "kalshi_realized": 0.0,
+          "kalshi_exposure": 2.79
+        }
+      ],
       "settled_cards": [],
       "scar_cards": [
         {
@@ -3302,15 +4254,104 @@
           "kalshi_exposure": 0.09
         }
       ],
-      "fills": [],
-      "pnl_source": "kalshi"
+      "fills": [
+        {
+          "ticker": "KXLOWTCHI-26AUG08-B71.5",
+          "action": "sell",
+          "side": "no",
+          "qty": 28.0,
+          "price": 0.65,
+          "created_time": "2026-08-08T17:43:55.974371Z",
+          "fee": 0.4459
+        },
+        {
+          "ticker": "KXHIGHCHI-26AUG09-T83",
+          "action": "sell",
+          "side": "no",
+          "qty": 5.0,
+          "price": 0.4,
+          "created_time": "2026-08-09T00:31:53.436407Z",
+          "fee": 0.084
+        },
+        {
+          "ticker": "KXHIGHCHI-26AUG08-B83.5",
+          "action": "buy",
+          "side": "yes",
+          "qty": 98.0,
+          "price": 0.52,
+          "created_time": "2026-08-09T02:08:59.02976Z",
+          "fee": 1.7123
+        },
+        {
+          "ticker": "KXHIGHCHI-26AUG09-B85.5",
+          "action": "buy",
+          "side": "yes",
+          "qty": 5.0,
+          "price": 0.31,
+          "created_time": "2026-08-09T04:26:55.833745Z",
+          "fee": 0.0749
+        },
+        {
+          "ticker": "KXHIGHCHI-26AUG09-B85.5",
+          "action": "buy",
+          "side": "yes",
+          "qty": 4.0,
+          "price": 0.31,
+          "created_time": "2026-08-09T04:34:30.642281Z",
+          "fee": 0.0
+        }
+      ],
+      "orders": [
+        {
+          "order_id": "0f6568e7-3106-4939-8e9d-eb85c439f4b4",
+          "ticker": "KXLOWTCHI-26AUG08-B71.5",
+          "side": "yes",
+          "action": "sell",
+          "status": "canceled",
+          "yes_price": "0.6500",
+          "remaining": "0.00",
+          "created_time": "2026-08-08T17:43:55.974371Z"
+        },
+        {
+          "order_id": "4b7353d6-4caf-4fc3-b22e-842b6f7dc019",
+          "ticker": "KXHIGHCHI-26AUG09-T83",
+          "side": "yes",
+          "action": "sell",
+          "status": "canceled",
+          "yes_price": "0.4000",
+          "remaining": "0.00",
+          "created_time": "2026-08-09T00:31:53.436407Z"
+        },
+        {
+          "order_id": "79d8c55b-a1f0-4c1f-aef1-da63922ff538",
+          "ticker": "KXHIGHCHI-26AUG08-B83.5",
+          "side": "yes",
+          "action": "buy",
+          "status": "executed",
+          "yes_price": "0.5200",
+          "remaining": "0.00",
+          "created_time": "2026-08-09T02:08:59.02976Z"
+        },
+        {
+          "order_id": "f057903e-c957-4f36-a050-1f3c4ae7c88f",
+          "ticker": "KXHIGHCHI-26AUG09-B85.5",
+          "side": "yes",
+          "action": "buy",
+          "status": "canceled",
+          "yes_price": "0.3100",
+          "remaining": "0.00",
+          "created_time": "2026-08-09T04:26:55.833745Z"
+        }
+      ],
+      "pnl_source": "kalshi",
+      "filter": "fills_orders_after_start_exclude_scar_exclude_gas"
     }
   },
   "gas": {
     "live": true,
-    "pause": 0,
-    "pause_reason": null,
-    "prints": 2,
+    "pause": 1,
+    "pause_reason": "GK-1: Print moved $0.0409 (>= $0.0200)",
+    "prints": 3,
     "forecasts": 43,
     "today_print": null,
     "today_date": null,
@@ -3319,6 +4360,586 @@
     "forecast_m": -0.0168,
     "forecast_sigma": 0.003,
     "forecast_base": 4.0633,
-    "forecast_rung": "unconditional"
+    "forecast_rung": "unconditional",
+    "atm_spread": null,
+    "experiments": {
+      "active_experiment_id": "exp-gas-1",
+      "active_experiment_ids": [
+        "exp-gas-2",
+        "exp-gas-1"
+      ],
+      "catalog": [
+        {
+          "id": "exp-gas-2",
+          "name": "Experiment 2 \u2014 Gas shock",
+          "status": "active",
+          "allocation_dollars": 100.0,
+          "started_at": "2026-08-09T05:15:53.550083+00:00"
+        },
+        {
+          "id": "exp-gas-1",
+          "name": "Experiment 1 \u2014 Baseline gas",
+          "status": "active",
+          "allocation_dollars": 250.0,
+          "started_at": "2026-08-09T01:38:02.791448+00:00"
+        }
+      ],
+      "active": {
+        "id": "exp-gas-1",
+        "name": "Experiment 1 \u2014 Baseline gas",
+        "status": "active",
+        "allocation_dollars": 250.0,
+        "duration_days": 14,
+        "started_at": "2026-08-09T01:38:02.791448+00:00",
+        "day_index": 0,
+        "tracking_mode": "kalshi_demo",
+        "waiting": false,
+        "notes": "Baseline gas Exp1: frozen GC-* knobs + Kalshi demo maker quotes (post_only). Shares demo account with weather Exp1; scorecard filters US-GAS after started_at only.",
+        "protocol": {
+          "pass": [
+            "net_pnl_after_fees >= 0 on Gas Exp1 Kalshi fills only",
+            "max_drawdown <= 15% of allocation",
+            "no cancel/dupe ledger corruption",
+            "kill stays GREEN (brief YELLOW ok)"
+          ],
+          "fail_early": [
+            "kill_RED",
+            "dd_gt_15pct",
+            "gk4_latch"
+          ]
+        },
+        "parameters": {
+          "name": "Experiment 1 \u2014 Baseline gas",
+          "question": "With default gas maker settings, can a $250 Kalshi demo slice show a path to profitability over 14 days?",
+          "duration_days": 14,
+          "universe": {
+            "vertical": "gas",
+            "series": [
+              "KXAAAGASD",
+              "KXAAAGASW"
+            ],
+            "weather": false
+          },
+          "edge_entry": {
+            "min_edge_maker": 0.03,
+            "min_edge_label": "3\u00a2 maker (GC-5)",
+            "min_edge_taker": 0.05,
+            "directions": [
+              "BUY_YES",
+              "BUY_NO"
+            ],
+            "style": "maker_first"
+          },
+          "sizing_risk": {
+            "allocation_dollars": 250.0,
+            "max_total_exposure_pct": 0.075,
+            "max_total_exposure_dollars_at_ref": 75.0,
+            "max_event_exposure_pct": 0.05,
+            "max_strikes_per_event": 3,
+            "max_open_orders": 8,
+            "max_new_per_cycle": 4,
+            "daily_loss_pause_dollars": 20.0,
+            "reference_bankroll_dollars": 1000.0
+          },
+          "execution": {
+            "quote_cutoff_et": "23:00",
+            "cancel_all_et": "23:30",
+            "mode": "kalshi_demo",
+            "post_only": true,
+            "fill_source": "exchange_reconcile"
+          },
+          "scorecard_rules": {
+            "slice_pnl": {
+              "pass": ">= 0 at day 14",
+              "watch": "oscillating",
+              "fail": null
+            },
+            "max_drawdown_pct": {
+              "pass": "<= 0.15",
+              "watch": "0.10\u20130.15",
+              "fail": "> 0.15 or GK-5"
+            },
+            "pause": {
+              "pass": "not latched",
+              "watch": "auto pause",
+              "fail": "GK-4 latch"
+            },
+            "fill_hygiene": {
+              "pass": "maker fills clean",
+              "watch": "anomaly logged",
+              "fail": "corruption recurs"
+            },
+            "kill_switch": {
+              "pass": "GREEN (brief YELLOW auto-ok)",
+              "watch": "YELLOW latch",
+              "fail": "RED"
+            }
+          },
+          "roadmap_note": "Gas Exp1 = GC defaults; later experiments change one GC knob family"
+        },
+        "scorecard": {
+          "overall": "watch",
+          "chips": [
+            {
+              "id": "slice_pnl",
+              "label": "Slice P&L",
+              "state": "pass",
+              "detail": "$+0.00 \u00b7 day 0"
+            },
+            {
+              "id": "drawdown",
+              "label": "Drawdown",
+              "state": "pass",
+              "detail": "0.0%"
+            },
+            {
+              "id": "pause",
+              "label": "Gas pause",
+              "state": "watch",
+              "detail": "GK-1: Print moved $0.0409 (>= $0.0200)"
+            },
+            {
+              "id": "hygiene",
+              "label": "Fill hygiene",
+              "state": "pass",
+              "detail": "clean"
+            },
+            {
+              "id": "kill",
+              "label": "Kill switch",
+              "state": "pass",
+              "detail": "GREEN"
+            }
+          ],
+          "parameters_name": "Experiment 1 \u2014 Baseline gas"
+        },
+        "slice_deployed": 0,
+        "slice_remaining": 250.0,
+        "slice_pnl": 0,
+        "slice_fees": 0.0,
+        "open_count": 0,
+        "scar_open_count": 0,
+        "fill_count_since_start": 0,
+        "order_count_since_start": 0,
+        "open_cards": [],
+        "settled_cards": [],
+        "scar_cards": [],
+        "pnl_source": "kalshi",
+        "filter": "live_positions_after_start_us_gas_baseline",
+        "is_shock": false
+      },
+      "by_id": {
+        "exp-gas-2": {
+          "id": "exp-gas-2",
+          "name": "Experiment 2 \u2014 Gas shock",
+          "status": "active",
+          "allocation_dollars": 100.0,
+          "duration_days": 14,
+          "started_at": "2026-08-09T05:15:53.550083+00:00",
+          "day_index": 0,
+          "tracking_mode": "kalshi_demo",
+          "waiting": false,
+          "notes": "Follow-the-print on GK-1 days. Exp1 stays paused. Separate from weather $500 and gas Exp1 $250 scorecards.",
+          "protocol": {
+            "pass": [
+              "net_pnl >= 0 on Exp2 shock fills only",
+              "max_drawdown <= 20% of allocation",
+              "only trades while GK-1-only pause"
+            ],
+            "fail_early": [
+              "kill_RED",
+              "dd_gt_20pct"
+            ]
+          },
+          "parameters": {
+            "name": "Experiment 2 \u2014 Gas shock",
+            "question": "When GK-1 fires, can a small follow-the-print book ($100) show edge over 14 days on Kalshi demo?",
+            "duration_days": 14,
+            "universe": {
+              "vertical": "gas",
+              "series": [
+                "KXAAAGASD",
+                "KXAAAGASW"
+              ],
+              "regime": "gk1_shock_only",
+              "weather": false
+            },
+            "edge_entry": {
+              "style": "momentum_follow_print",
+              "min_edge_maker": 0.02,
+              "min_edge_taker": 0.05,
+              "directions": [
+                "BUY_YES",
+                "BUY_NO"
+              ],
+              "trigger_print": 0.02,
+              "trigger_rbob": 0.04,
+              "max_strikes": 2
+            },
+            "sizing_risk": {
+              "allocation_dollars": 100.0,
+              "max_total_exposure_pct": 0.075,
+              "max_total_exposure_dollars_at_ref": 75.0,
+              "max_new_per_cycle": 2,
+              "reference_bankroll_dollars": 1000.0,
+              "separate_from_weather_500": true,
+              "separate_from_gas_exp1": true
+            },
+            "execution": {
+              "mode": "kalshi_demo",
+              "post_only_maker": true,
+              "taker_if_edge_ge": 0.05,
+              "exp1_stays_paused_on_gk1": true
+            },
+            "scorecard_rules": {
+              "slice_pnl": {
+                "pass": ">= 0 at day 14",
+                "watch": "oscillating",
+                "fail": null
+              },
+              "max_drawdown_pct": {
+                "pass": "<= 0.20",
+                "watch": "0.15\u20130.20",
+                "fail": "> 0.20"
+              },
+              "kill_switch": {
+                "pass": "GREEN (brief YELLOW auto-ok)",
+                "watch": "YELLOW latch",
+                "fail": "RED"
+              }
+            },
+            "roadmap_note": "Exp2 only arms under GK-1; Exp1 baseline stays paused"
+          },
+          "scorecard": {
+            "overall": "pass",
+            "chips": [
+              {
+                "id": "slice_pnl",
+                "label": "Slice P&L",
+                "state": "pass",
+                "detail": "$+0.00 \u00b7 day 0"
+              },
+              {
+                "id": "drawdown",
+                "label": "Drawdown",
+                "state": "pass",
+                "detail": "0.0%"
+              },
+              {
+                "id": "pause",
+                "label": "Gas pause",
+                "state": "pass",
+                "detail": "GK-1 armed (Exp2 path)"
+              },
+              {
+                "id": "hygiene",
+                "label": "Fill hygiene",
+                "state": "pass",
+                "detail": "clean"
+              },
+              {
+                "id": "kill",
+                "label": "Kill switch",
+                "state": "pass",
+                "detail": "GREEN"
+              }
+            ],
+            "parameters_name": "Experiment 2 \u2014 Gas shock"
+          },
+          "slice_deployed": 0,
+          "slice_remaining": 100.0,
+          "slice_pnl": 0,
+          "slice_fees": 0.0,
+          "open_count": 0,
+          "scar_open_count": 0,
+          "fill_count_since_start": 0,
+          "order_count_since_start": 0,
+          "open_cards": [],
+          "settled_cards": [],
+          "scar_cards": [],
+          "pnl_source": "kalshi",
+          "filter": "shock_method_gas_shock_v1",
+          "is_shock": true
+        },
+        "exp-gas-1": {
+          "id": "exp-gas-1",
+          "name": "Experiment 1 \u2014 Baseline gas",
+          "status": "active",
+          "allocation_dollars": 250.0,
+          "duration_days": 14,
+          "started_at": "2026-08-09T01:38:02.791448+00:00",
+          "day_index": 0,
+          "tracking_mode": "kalshi_demo",
+          "waiting": false,
+          "notes": "Baseline gas Exp1: frozen GC-* knobs + Kalshi demo maker quotes (post_only). Shares demo account with weather Exp1; scorecard filters US-GAS after started_at only.",
+          "protocol": {
+            "pass": [
+              "net_pnl_after_fees >= 0 on Gas Exp1 Kalshi fills only",
+              "max_drawdown <= 15% of allocation",
+              "no cancel/dupe ledger corruption",
+              "kill stays GREEN (brief YELLOW ok)"
+            ],
+            "fail_early": [
+              "kill_RED",
+              "dd_gt_15pct",
+              "gk4_latch"
+            ]
+          },
+          "parameters": {
+            "name": "Experiment 1 \u2014 Baseline gas",
+            "question": "With default gas maker settings, can a $250 Kalshi demo slice show a path to profitability over 14 days?",
+            "duration_days": 14,
+            "universe": {
+              "vertical": "gas",
+              "series": [
+                "KXAAAGASD",
+                "KXAAAGASW"
+              ],
+              "weather": false
+            },
+            "edge_entry": {
+              "min_edge_maker": 0.03,
+              "min_edge_label": "3\u00a2 maker (GC-5)",
+              "min_edge_taker": 0.05,
+              "directions": [
+                "BUY_YES",
+                "BUY_NO"
+              ],
+              "style": "maker_first"
+            },
+            "sizing_risk": {
+              "allocation_dollars": 250.0,
+              "max_total_exposure_pct": 0.075,
+              "max_total_exposure_dollars_at_ref": 75.0,
+              "max_event_exposure_pct": 0.05,
+              "max_strikes_per_event": 3,
+              "max_open_orders": 8,
+              "max_new_per_cycle": 4,
+              "daily_loss_pause_dollars": 20.0,
+              "reference_bankroll_dollars": 1000.0
+            },
+            "execution": {
+              "quote_cutoff_et": "23:00",
+              "cancel_all_et": "23:30",
+              "mode": "kalshi_demo",
+              "post_only": true,
+              "fill_source": "exchange_reconcile"
+            },
+            "scorecard_rules": {
+              "slice_pnl": {
+                "pass": ">= 0 at day 14",
+                "watch": "oscillating",
+                "fail": null
+              },
+              "max_drawdown_pct": {
+                "pass": "<= 0.15",
+                "watch": "0.10\u20130.15",
+                "fail": "> 0.15 or GK-5"
+              },
+              "pause": {
+                "pass": "not latched",
+                "watch": "auto pause",
+                "fail": "GK-4 latch"
+              },
+              "fill_hygiene": {
+                "pass": "maker fills clean",
+                "watch": "anomaly logged",
+                "fail": "corruption recurs"
+              },
+              "kill_switch": {
+                "pass": "GREEN (brief YELLOW auto-ok)",
+                "watch": "YELLOW latch",
+                "fail": "RED"
+              }
+            },
+            "roadmap_note": "Gas Exp1 = GC defaults; later experiments change one GC knob family"
+          },
+          "scorecard": {
+            "overall": "watch",
+            "chips": [
+              {
+                "id": "slice_pnl",
+                "label": "Slice P&L",
+                "state": "pass",
+                "detail": "$+0.00 \u00b7 day 0"
+              },
+              {
+                "id": "drawdown",
+                "label": "Drawdown",
+                "state": "pass",
+                "detail": "0.0%"
+              },
+              {
+                "id": "pause",
+                "label": "Gas pause",
+                "state": "watch",
+                "detail": "GK-1: Print moved $0.0409 (>= $0.0200)"
+              },
+              {
+                "id": "hygiene",
+                "label": "Fill hygiene",
+                "state": "pass",
+                "detail": "clean"
+              },
+              {
+                "id": "kill",
+                "label": "Kill switch",
+                "state": "pass",
+                "detail": "GREEN"
+              }
+            ],
+            "parameters_name": "Experiment 1 \u2014 Baseline gas"
+          },
+          "slice_deployed": 0,
+          "slice_remaining": 250.0,
+          "slice_pnl": 0,
+          "slice_fees": 0.0,
+          "open_count": 0,
+          "scar_open_count": 0,
+          "fill_count_since_start": 0,
+          "order_count_since_start": 0,
+          "open_cards": [],
+          "settled_cards": [],
+          "scar_cards": [],
+          "pnl_source": "kalshi",
+          "filter": "live_positions_after_start_us_gas_baseline",
+          "is_shock": false
+        }
+      },
+      "shock": {
+        "id": "exp-gas-2",
+        "name": "Experiment 2 \u2014 Gas shock",
+        "status": "active",
+        "allocation_dollars": 100.0,
+        "duration_days": 14,
+        "started_at": "2026-08-09T05:15:53.550083+00:00",
+        "day_index": 0,
+        "tracking_mode": "kalshi_demo",
+        "waiting": false,
+        "notes": "Follow-the-print on GK-1 days. Exp1 stays paused. Separate from weather $500 and gas Exp1 $250 scorecards.",
+        "protocol": {
+          "pass": [
+            "net_pnl >= 0 on Exp2 shock fills only",
+            "max_drawdown <= 20% of allocation",
+            "only trades while GK-1-only pause"
+          ],
+          "fail_early": [
+            "kill_RED",
+            "dd_gt_20pct"
+          ]
+        },
+        "parameters": {
+          "name": "Experiment 2 \u2014 Gas shock",
+          "question": "When GK-1 fires, can a small follow-the-print book ($100) show edge over 14 days on Kalshi demo?",
+          "duration_days": 14,
+          "universe": {
+            "vertical": "gas",
+            "series": [
+              "KXAAAGASD",
+              "KXAAAGASW"
+            ],
+            "regime": "gk1_shock_only",
+            "weather": false
+          },
+          "edge_entry": {
+            "style": "momentum_follow_print",
+            "min_edge_maker": 0.02,
+            "min_edge_taker": 0.05,
+            "directions": [
+              "BUY_YES",
+              "BUY_NO"
+            ],
+            "trigger_print": 0.02,
+            "trigger_rbob": 0.04,
+            "max_strikes": 2
+          },
+          "sizing_risk": {
+            "allocation_dollars": 100.0,
+            "max_total_exposure_pct": 0.075,
+            "max_total_exposure_dollars_at_ref": 75.0,
+            "max_new_per_cycle": 2,
+            "reference_bankroll_dollars": 1000.0,
+            "separate_from_weather_500": true,
+            "separate_from_gas_exp1": true
+          },
+          "execution": {
+            "mode": "kalshi_demo",
+            "post_only_maker": true,
+            "taker_if_edge_ge": 0.05,
+            "exp1_stays_paused_on_gk1": true
+          },
+          "scorecard_rules": {
+            "slice_pnl": {
+              "pass": ">= 0 at day 14",
+              "watch": "oscillating",
+              "fail": null
+            },
+            "max_drawdown_pct": {
+              "pass": "<= 0.20",
+              "watch": "0.15\u20130.20",
+              "fail": "> 0.20"
+            },
+            "kill_switch": {
+              "pass": "GREEN (brief YELLOW auto-ok)",
+              "watch": "YELLOW latch",
+              "fail": "RED"
+            }
+          },
+          "roadmap_note": "Exp2 only arms under GK-1; Exp1 baseline stays paused"
+        },
+        "scorecard": {
+          "overall": "pass",
+          "chips": [
+            {
+              "id": "slice_pnl",
+              "label": "Slice P&L",
+              "state": "pass",
+              "detail": "$+0.00 \u00b7 day 0"
+            },
+            {
+              "id": "drawdown",
+              "label": "Drawdown",
+              "state": "pass",
+              "detail": "0.0%"
+            },
+            {
+              "id": "pause",
+              "label": "Gas pause",
+              "state": "pass",
+              "detail": "GK-1 armed (Exp2 path)"
+            },
+            {
+              "id": "hygiene",
+              "label": "Fill hygiene",
+              "state": "pass",
+              "detail": "clean"
+            },
+            {
+              "id": "kill",
+              "label": "Kill switch",
+              "state": "pass",
+              "detail": "GREEN"
+            }
+          ],
+          "parameters_name": "Experiment 2 \u2014 Gas shock"
+        },
+        "slice_deployed": 0,
+        "slice_remaining": 100.0,
+        "slice_pnl": 0,
+        "slice_fees": 0.0,
+        "open_count": 0,
+        "scar_open_count": 0,
+        "fill_count_since_start": 0,
+        "order_count_since_start": 0,
+        "open_cards": [],
+        "settled_cards": [],
+        "scar_cards": [],
+        "pnl_source": "kalshi",
+        "filter": "shock_method_gas_shock_v1",
+        "is_shock": true
+      }
+    },
+    "paper_positions": [],
+    "exp_started_at": "2026-08-09T01:38:02.791448+00:00"
   }
 }
