@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T06:11:52.679281+00:00",
+  "generated_at": "2026-08-09T06:12:09.816254+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -108,9 +108,9 @@
     "kill_switch_trigger": null,
     "kill_switch_reason": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 757.0,
-    "weather_age_mins": 12.6,
-    "market_age_mins": 12.5,
+    "last_cycle_seconds_ago": 774.0,
+    "weather_age_mins": 12.9,
+    "market_age_mins": 12.7,
     "heartbeat_alive": true,
     "db_size_mb": 66.2,
     "edge_count": 20,
@@ -1348,7 +1348,7 @@
     "edge_half_life_minutes": 0.0,
     "n_snapshots": 78366,
     "n_signals": 34153,
-    "computed_at": "2026-08-09T06:12:00.799501+00:00"
+    "computed_at": "2026-08-09T06:12:16.925595+00:00"
   },
   "alerts": [],
   "monitoring": {
@@ -4368,14 +4368,14 @@
           "id": "exp-gas-1",
           "name": "Experiment 1 \u2014 Baseline gas",
           "status": "active",
-          "allocation_dollars": 250.0,
+          "allocation_dollars": 500.0,
           "started_at": "2026-08-09T01:38:02.791448+00:00"
         },
         {
           "id": "exp-gas-2",
           "name": "Experiment 2 \u2014 Gas shock",
           "status": "active",
-          "allocation_dollars": 100.0,
+          "allocation_dollars": 500.0,
           "started_at": "2026-08-09T05:15:53.550083+00:00"
         }
       ],
@@ -4383,7 +4383,7 @@
         "id": "exp-gas-1",
         "name": "Experiment 1 \u2014 Baseline gas",
         "status": "active",
-        "allocation_dollars": 250.0,
+        "allocation_dollars": 500.0,
         "duration_days": 14,
         "started_at": "2026-08-09T01:38:02.791448+00:00",
         "day_index": 0,
@@ -4405,7 +4405,7 @@
         },
         "parameters": {
           "name": "Experiment 1 \u2014 Baseline gas",
-          "question": "With default gas maker settings, can a $250 Kalshi demo slice show a path to profitability over 14 days?",
+          "question": "With default gas maker settings, can a $500 Kalshi demo slice show a path to profitability over 14 days?",
           "duration_days": 14,
           "universe": {
             "vertical": "gas",
@@ -4426,7 +4426,7 @@
             "style": "maker_first"
           },
           "sizing_risk": {
-            "allocation_dollars": 250.0,
+            "allocation_dollars": 500.0,
             "max_total_exposure_pct": 0.075,
             "max_total_exposure_dollars_at_ref": 75.0,
             "max_event_exposure_pct": 0.05,
@@ -4509,7 +4509,7 @@
           "parameters_name": "Experiment 1 \u2014 Baseline gas"
         },
         "slice_deployed": 0,
-        "slice_remaining": 250.0,
+        "slice_remaining": 500.0,
         "slice_pnl": 0,
         "slice_fees": 0.0,
         "open_count": 0,
@@ -4528,7 +4528,7 @@
           "id": "exp-gas-2",
           "name": "Experiment 2 \u2014 Gas shock",
           "status": "active",
-          "allocation_dollars": 100.0,
+          "allocation_dollars": 500.0,
           "duration_days": 14,
           "started_at": "2026-08-09T05:15:53.550083+00:00",
           "day_index": 0,
@@ -4548,7 +4548,7 @@
           },
           "parameters": {
             "name": "Experiment 2 \u2014 Gas shock",
-            "question": "When GK-1 fires, can a small follow-the-print book ($100) show edge over 14 days on Kalshi demo?",
+            "question": "When GK-1 fires, can a small follow-the-print book ($500) show edge over 14 days on Kalshi demo?",
             "duration_days": 14,
             "universe": {
               "vertical": "gas",
@@ -4572,7 +4572,7 @@
               "max_strikes": 2
             },
             "sizing_risk": {
-              "allocation_dollars": 100.0,
+              "allocation_dollars": 500.0,
               "max_total_exposure_pct": 0.075,
               "max_total_exposure_dollars_at_ref": 75.0,
               "max_new_per_cycle": 2,
@@ -4642,7 +4642,7 @@
             "parameters_name": "Experiment 2 \u2014 Gas shock"
           },
           "slice_deployed": 0,
-          "slice_remaining": 100.0,
+          "slice_remaining": 500.0,
           "slice_pnl": 0,
           "slice_fees": 0.0,
           "open_count": 0,
@@ -4660,7 +4660,7 @@
           "id": "exp-gas-1",
           "name": "Experiment 1 \u2014 Baseline gas",
           "status": "active",
-          "allocation_dollars": 250.0,
+          "allocation_dollars": 500.0,
           "duration_days": 14,
           "started_at": "2026-08-09T01:38:02.791448+00:00",
           "day_index": 0,
@@ -4682,7 +4682,7 @@
           },
           "parameters": {
             "name": "Experiment 1 \u2014 Baseline gas",
-            "question": "With default gas maker settings, can a $250 Kalshi demo slice show a path to profitability over 14 days?",
+            "question": "With default gas maker settings, can a $500 Kalshi demo slice show a path to profitability over 14 days?",
             "duration_days": 14,
             "universe": {
               "vertical": "gas",
@@ -4703,7 +4703,7 @@
               "style": "maker_first"
             },
             "sizing_risk": {
-              "allocation_dollars": 250.0,
+              "allocation_dollars": 500.0,
               "max_total_exposure_pct": 0.075,
               "max_total_exposure_dollars_at_ref": 75.0,
               "max_event_exposure_pct": 0.05,
@@ -4786,7 +4786,7 @@
             "parameters_name": "Experiment 1 \u2014 Baseline gas"
           },
           "slice_deployed": 0,
-          "slice_remaining": 250.0,
+          "slice_remaining": 500.0,
           "slice_pnl": 0,
           "slice_fees": 0.0,
           "open_count": 0,
@@ -4805,7 +4805,7 @@
         "id": "exp-gas-2",
         "name": "Experiment 2 \u2014 Gas shock",
         "status": "active",
-        "allocation_dollars": 100.0,
+        "allocation_dollars": 500.0,
         "duration_days": 14,
         "started_at": "2026-08-09T05:15:53.550083+00:00",
         "day_index": 0,
@@ -4825,7 +4825,7 @@
         },
         "parameters": {
           "name": "Experiment 2 \u2014 Gas shock",
-          "question": "When GK-1 fires, can a small follow-the-print book ($100) show edge over 14 days on Kalshi demo?",
+          "question": "When GK-1 fires, can a small follow-the-print book ($500) show edge over 14 days on Kalshi demo?",
           "duration_days": 14,
           "universe": {
             "vertical": "gas",
@@ -4849,7 +4849,7 @@
             "max_strikes": 2
           },
           "sizing_risk": {
-            "allocation_dollars": 100.0,
+            "allocation_dollars": 500.0,
             "max_total_exposure_pct": 0.075,
             "max_total_exposure_dollars_at_ref": 75.0,
             "max_new_per_cycle": 2,
@@ -4919,7 +4919,7 @@
           "parameters_name": "Experiment 2 \u2014 Gas shock"
         },
         "slice_deployed": 0,
-        "slice_remaining": 100.0,
+        "slice_remaining": 500.0,
         "slice_pnl": 0,
         "slice_fees": 0.0,
         "open_count": 0,
