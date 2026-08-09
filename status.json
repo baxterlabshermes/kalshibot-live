@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T05:59:19.717779+00:00",
+  "generated_at": "2026-08-09T06:11:52.679281+00:00",
   "phases_progress": "12 / 14",
   "phases": {
     "p0": {
@@ -97,10 +97,10 @@
   },
   "db": {
     "contracts": 365,
-    "snapshots": 127080,
+    "snapshots": 127120,
     "observations": 22,
-    "resolved": 258,
-    "edge_signals": 75456
+    "resolved": 262,
+    "edge_signals": 75457
   },
   "health": {
     "kill_switch": "GREEN",
@@ -108,8 +108,8 @@
     "kill_switch_trigger": null,
     "kill_switch_reason": null,
     "bot_mode": "FULL",
-    "last_cycle_seconds_ago": 761.0,
-    "weather_age_mins": 12.7,
+    "last_cycle_seconds_ago": 757.0,
+    "weather_age_mins": 12.6,
     "market_age_mins": 12.5,
     "heartbeat_alive": true,
     "db_size_mb": 66.2,
@@ -120,7 +120,6 @@
     "cycle_fills": 0,
     "next_settlement_hours": 0,
     "edge_history": [
-      35.71,
       29.71,
       30.96,
       31.21,
@@ -167,6 +166,7 @@
       20.19,
       20.19,
       6.71,
+      -0.7,
       -0.7
     ],
     "brier_history": [
@@ -180,7 +180,7 @@
     "cash": 680.0162,
     "bankroll": 500.0,
     "realized_pnl": -56.7462,
-    "unrealized_pnl": 37.5133,
+    "unrealized_pnl": 61.0333,
     "total_exposure": 743.4418,
     "exposure_by_city": {
       "Chicago": 68.95
@@ -283,8 +283,8 @@
       "side": "YES",
       "size": 98,
       "entry_price": 0.52,
-      "current_mark": 0.26,
-      "unrealized_pnl": -27.2,
+      "current_mark": 0.5,
+      "unrealized_pnl": -3.68,
       "total_cost": 52.68,
       "status": "open",
       "opened_at": "2026-08-09T02:08:58",
@@ -355,6 +355,62 @@
   "timeline": {
     "recent": [
       {
+        "time": "2026-08-09T05:59:34",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami HIGH > 93.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-08-09T05:59:34",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami HIGH > 91.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: NO"
+      },
+      {
+        "time": "2026-08-09T05:59:34",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami HIGH > 89.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
+        "time": "2026-08-09T05:59:34",
+        "type": "settlement",
+        "icon": "\ud83c\udfc1",
+        "label": "Miami HIGH > 87.0\u00b0F 2026-08-08 resolved",
+        "detail": "Outcome: YES"
+      },
+      {
+        "time": "2026-08-09T05:59:25",
+        "type": "edge",
+        "icon": "\u0394\ufe0f",
+        "label": "Chicago HIGH 85.0\u00b0F",
+        "detail": "BUY_YES edge -0.7%"
+      },
+      {
+        "time": "2026-08-09T05:59:17",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Miami",
+        "detail": "GFS ensemble data"
+      },
+      {
+        "time": "2026-08-09T05:59:16",
+        "type": "cycle",
+        "icon": "\ud83d\udd04",
+        "label": "Main cycle completed",
+        "detail": "Status: alive"
+      },
+      {
+        "time": "2026-08-09T05:59:16",
+        "type": "weather",
+        "icon": "\u2601\ufe0f",
+        "label": "Weather fetched for Chicago",
+        "detail": "GFS ensemble data"
+      },
+      {
         "time": "2026-08-09T05:46:48",
         "type": "edge",
         "icon": "\u0394\ufe0f",
@@ -362,25 +418,11 @@
         "detail": "BUY_YES edge -0.7%"
       },
       {
-        "time": "2026-08-09T05:46:39",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Miami",
-        "detail": "GFS ensemble data"
-      },
-      {
         "time": "2026-08-09T05:46:38",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
         "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-09T05:46:38",
-        "type": "weather",
-        "icon": "\u2601\ufe0f",
-        "label": "Weather fetched for Chicago",
-        "detail": "GFS ensemble data"
       },
       {
         "time": "2026-08-09T05:31:29",
@@ -418,34 +460,6 @@
         "detail": "Outcome: NO"
       },
       {
-        "time": "2026-08-09T05:16:15",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago HIGH < 81.0\u00b0F 2026-08-08 resolved",
-        "detail": "Outcome: NO"
-      },
-      {
-        "time": "2026-08-09T05:16:15",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago HIGH > 87.0\u00b0F 2026-08-08 resolved",
-        "detail": "Outcome: NO"
-      },
-      {
-        "time": "2026-08-09T05:16:15",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago HIGH > 85.0\u00b0F 2026-08-08 resolved",
-        "detail": "Outcome: YES"
-      },
-      {
-        "time": "2026-08-09T05:16:15",
-        "type": "settlement",
-        "icon": "\ud83c\udfc1",
-        "label": "Chicago HIGH > 81.0\u00b0F 2026-08-08 resolved",
-        "detail": "Outcome: YES"
-      },
-      {
         "time": "2026-08-09T05:16:04",
         "type": "edge",
         "icon": "\u0394\ufe0f",
@@ -468,20 +482,6 @@
       },
       {
         "time": "2026-08-09T05:12:45",
-        "type": "cycle",
-        "icon": "\ud83d\udd04",
-        "label": "Main cycle completed",
-        "detail": "Status: alive"
-      },
-      {
-        "time": "2026-08-09T04:57:36",
-        "type": "edge",
-        "icon": "\u0394\ufe0f",
-        "label": "Chicago HIGH 85.0\u00b0F",
-        "detail": "BUY_YES edge +20.2%"
-      },
-      {
-        "time": "2026-08-09T04:57:25",
         "type": "cycle",
         "icon": "\ud83d\udd04",
         "label": "Main cycle completed",
@@ -1008,7 +1008,7 @@
         "urgent": false
       },
       {
-        "time": "2026-08-09T11:46:39.920244+00:00",
+        "time": "2026-08-09T11:59:17.130491+00:00",
         "icon": "\u2601\ufe0f",
         "label": "Next weather refresh",
         "detail": "~6h"
@@ -1018,7 +1018,7 @@
   "calibration": {
     "brier": 0.2128,
     "win_rate": 0.571,
-    "resolved": 258,
+    "resolved": 262,
     "observations": 22,
     "signal_market_correlation": 0.0,
     "edge_half_life_minutes": 0.0,
@@ -1335,20 +1335,20 @@
     "pnl_total": -56.7462,
     "pnl_source": "kalshi",
     "fee_total": 4.7958,
-    "sharpe_like": 0.45746237967028874,
-    "sortino": 23.010430001156756,
-    "calmar": 13.975786163522134,
-    "profit_factor": 119.51466666666667,
+    "sharpe_like": 0.3945149971197534,
+    "sortino": 20.067530464073865,
+    "calmar": 12.18836477987432,
+    "profit_factor": 104.35733333333334,
     "max_drawdown": null
   },
   "competition": {
-    "avg_spread": 0.5304042156837727,
+    "avg_spread": 0.5303039583492841,
     "avg_volume_24h": 0.0,
-    "signal_market_correlation": -0.004874132778480378,
+    "signal_market_correlation": -0.00469189291187141,
     "edge_half_life_minutes": 0.0,
-    "n_snapshots": 78374,
-    "n_signals": 34200,
-    "computed_at": "2026-08-09T05:59:26.835978+00:00"
+    "n_snapshots": 78366,
+    "n_signals": 34153,
+    "computed_at": "2026-08-09T06:12:00.799501+00:00"
   },
   "alerts": [],
   "monitoring": {
@@ -1360,6 +1360,17 @@
     "total_liquidity_contracts": 206
   },
   "markets": [
+    {
+      "city": "Chicago",
+      "date": "2026-08-09",
+      "metric": "high",
+      "threshold": 85.0,
+      "condition": ">",
+      "model_pct": 31,
+      "market_pct": 30,
+      "edge_pct": -1,
+      "verdict": "Market is slightly ahead"
+    },
     {
       "city": "Chicago",
       "date": "2026-08-09",
@@ -1568,20 +1579,18 @@
       "market_pct": 41,
       "edge_pct": 30,
       "verdict": "Strong edge \u2014 market is wrong"
-    },
-    {
-      "city": "Chicago",
-      "date": "2026-08-08",
-      "metric": "high",
-      "threshold": 83.0,
-      "condition": ">",
-      "model_pct": 74,
-      "market_pct": 51,
-      "edge_pct": 21,
-      "verdict": "Strong edge \u2014 market is wrong"
     }
   ],
   "signals": [
+    {
+      "date": "2026-08-09",
+      "city": "Chicago",
+      "metric": "high",
+      "threshold": 85.0,
+      "model_prob": 0.313,
+      "market_prob": 0.3,
+      "edge": -0.007
+    },
     {
       "date": "2026-08-09",
       "city": "Chicago",
@@ -1662,15 +1671,6 @@
       "model_prob": 0.085,
       "market_prob": 0.41,
       "edge": 0.305
-    },
-    {
-      "date": "2026-08-09",
-      "city": "Chicago",
-      "metric": "high",
-      "threshold": 83.0,
-      "model_prob": 0.74,
-      "market_prob": 0.51,
-      "edge": 0.21
     }
   ],
   "fills": [
@@ -1977,16 +1977,16 @@
       "entry_price": 0.52,
       "total_cost": 50.96,
       "status": "open",
-      "pnl": -25.48,
+      "pnl": -1.96,
       "pnl_type": "unrealized",
       "pnl_confidence": "low",
       "pnl_confidence_reason": "no book",
       "pnl_source": "kalshi",
       "mark_source": "mid",
       "best_bid": 0.0,
-      "best_ask": 0.52,
-      "spread": 0.52,
-      "mark_price": 0.26,
+      "best_ask": 1.0,
+      "spread": 1.0,
+      "mark_price": 0.5,
       "verdict": "open",
       "opened_at": null,
       "closed_at": null,
@@ -2972,7 +2972,7 @@
     "bankroll": 500.0,
     "exposure": 743.4418,
     "realized_pnl": -56.7462,
-    "unrealized_pnl": 37.5133,
+    "unrealized_pnl": 61.0333,
     "pnl_source": "kalshi"
   },
   "experiments": {
@@ -3088,19 +3088,19 @@
         "roadmap_note": "Exp2=C-9 only; Exp3=C-8 only; Exp4=cities (LA) after Exp1 evidence"
       },
       "scorecard": {
-        "overall": "watch",
+        "overall": "pass",
         "chips": [
           {
             "id": "slice_pnl",
             "label": "Slice P&L",
-            "state": "watch",
-            "detail": "$-40.74 \u00b7 day 0"
+            "state": "pass",
+            "detail": "$+6.30 \u00b7 day 0"
           },
           {
             "id": "drawdown",
             "label": "Drawdown",
             "state": "pass",
-            "detail": "8.1%"
+            "detail": "0.0%"
           },
           {
             "id": "brier",
@@ -3135,10 +3135,10 @@
       "account_portfolio_value": 545.21,
       "slice_deployed": 66.55,
       "slice_remaining": 433.45,
-      "slice_pnl": -40.74,
+      "slice_pnl": 6.3,
       "slice_fees": 2.3171,
       "pnl_vs_baseline_pv": null,
-      "realized_since_start": -20.37,
+      "realized_since_start": 3.15,
       "open_count": 4,
       "scar_open_count": 17,
       "fill_count_since_start": 5,
@@ -3158,16 +3158,16 @@
           "entry_price": 0.52,
           "total_cost": 50.96,
           "status": "open",
-          "pnl": -25.48,
+          "pnl": -1.96,
           "pnl_type": "unrealized",
           "pnl_confidence": "low",
           "pnl_confidence_reason": "no book",
           "pnl_source": "kalshi",
           "mark_source": "mid",
           "best_bid": 0.0,
-          "best_ask": 0.52,
-          "spread": 0.52,
-          "mark_price": 0.26,
+          "best_ask": 1.0,
+          "spread": 1.0,
+          "mark_price": 0.5,
           "verdict": "open",
           "opened_at": null,
           "closed_at": null,
